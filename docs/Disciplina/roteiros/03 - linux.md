@@ -11,6 +11,31 @@
 !!! tip "Dica"
     Todos os comandos deste roteiro devem ser executados no terminal Linux da sua instância EC2. Cada seção pode ser praticada de forma independente.
 
+---
+
+### **Acesso opcional pelo GitHub Codespaces**
+
+O GitHub Codespaces permite abrir um ambiente Linux de desenvolvimento diretamente no navegador, sem instalar ferramentas localmente.
+
+#### Criando um Codespace
+
+1. Acesse o repositório deste roteiro no GitHub e faça login na sua conta.
+2. Clique em **Code** e selecione a aba **Codespaces**.
+3. Clique em **Create codespace on `<branch>`**. Se necessário, escolha a branch desejada.
+4. Aguarde a criação e a inicialização do ambiente.
+
+#### Abrindo o Codespace no navegador
+
+1. Acesse [github.com/codespaces](https://github.com/codespaces).
+2. Em **Your codespaces**, localize o ambiente criado.
+3. Clique no nome do Codespace para abri-lo no navegador.
+4. Use o terminal integrado do VS Code Web para executar os comandos deste roteiro.
+
+!!! warning "Atenção"
+    O Codespaces pode consumir a cota gratuita ou gerar custos conforme o plano da conta. Interrompa ou exclua o ambiente quando terminar.
+
+---
+
 ### **Parte 1 —** Gerenciamento de Sistema e Serviços
 
 Os sistemas Linux modernos utilizam o `systemd` para controlar todos os serviços em execução (servidores web, banco de dados, SSH, etc.). O comando central é o `systemctl`.
