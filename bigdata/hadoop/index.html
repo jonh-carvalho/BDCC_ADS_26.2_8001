@@ -21,7 +21,7 @@
     
     
       
-        <title>Ambiente de Desenvolvimento - BDCC_ADS_26.2_8001</title>
+        <title>O que é o Hadoop? - BDCC_ADS_26.2_8001</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ambiente-de-desenvolvimento" class="md-skip">
+        <a href="#o-que-e-o-hadoop" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ambiente de Desenvolvimento
+              O que é o Hadoop?
             
           </span>
         </div>
@@ -256,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../aulas/" class="md-tabs__link">
+        <a href="../../Disciplina/aulas/" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../bibliografia/" class="md-tabs__link">
+      <a href="../../Disciplina/bibliografia/" class="md-tabs__link">
         
   
   
@@ -457,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aulas/" class="md-nav__link">
+      <a href="../../Disciplina/aulas/" class="md-nav__link">
         
   
   
@@ -547,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roteiros/02%20-%20aws/" class="md-nav__link">
+      <a href="../../Disciplina/roteiros/02%20-%20aws/" class="md-nav__link">
         
   
   
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roteiros/03%20-%20linux/" class="md-nav__link">
+      <a href="../../Disciplina/roteiros/03%20-%20linux/" class="md-nav__link">
         
   
   
@@ -603,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roteiros/04%20-%20ec2/" class="md-nav__link">
+      <a href="../../Disciplina/roteiros/04%20-%20ec2/" class="md-nav__link">
         
   
   
@@ -631,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roteiros/03%20-%20linux/" class="md-nav__link">
+      <a href="../../Disciplina/roteiros/03%20-%20linux/" class="md-nav__link">
         
   
   
@@ -659,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../roteiros/05%20-%20nginxsite/" class="md-nav__link">
+      <a href="../../Disciplina/roteiros/05%20-%20nginxsite/" class="md-nav__link">
         
   
   
@@ -988,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bibliografia/" class="md-nav__link">
+      <a href="../../Disciplina/bibliografia/" class="md-nav__link">
         
   
   
@@ -1036,54 +1036,58 @@
   
 
 
-<h1 id="ambiente-de-desenvolvimento">Ambiente de Desenvolvimento<a class="headerlink" href="#ambiente-de-desenvolvimento" title="Permanent link">&para;</a></h1>
-<h2 id="visual-studio-code">Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h2>
+<h1 id="o-que-e-o-hadoop">O que é o Hadoop?<a class="headerlink" href="#o-que-e-o-hadoop" title="Permanent link">&para;</a></h1>
+<p>Hadoop é um framework de software de código aberto projetado para armazenar e processar grandes volumes de dados distribuídos em clusters de computadores. Ele foi inspirado pelo modelo MapReduce desenvolvido por Google e é amplamente utilizado em ambientes de big data.</p>
+<h2 id="componentes-principais-do-hadoop">Componentes principais do Hadoop:<a class="headerlink" href="#componentes-principais-do-hadoop" title="Permanent link">&para;</a></h2>
+<h3 id="1-hdfs-hadoop-distributed-file-system">1. HDFS (Hadoop Distributed File System)<a class="headerlink" href="#1-hdfs-hadoop-distributed-file-system" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Solução mais simples de instalar, usar o VSCode do Ms Store</li>
-<li>Instalar a extensão Python</li>
+<li>Sistema de arquivos distribuído que armazena dados em vários nós</li>
+<li>Garante alta disponibilidade e tolerância a falhas</li>
+<li>Divide os arquivos em blocos e replica esses blocos em diferentes máquinas</li>
 </ul>
-<h2 id="python-linux-e-windows-mais-facil-de-instalar-e-usar">Python - Linux e Windows [Mais fácil de instalar e usar]<a class="headerlink" href="#python-linux-e-windows-mais-facil-de-instalar-e-usar" title="Permanent link">&para;</a></h2>
+<h3 id="2-mapreduce">2. MapReduce<a class="headerlink" href="#2-mapreduce" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Instalar</strong><ul>
-<li>Python3 (também disponível no Ms Store)</li>
+<li>Modelo de programação para processamento paralelo de grandes conjuntos de dados</li>
+<li>Divide o trabalho em duas fases: mapeamento e redução</li>
+<li>Permite processar dados em paralelo em clusters</li>
 </ul>
-</li>
-<li><strong>Ambiente Virtual</strong> - com o ctrl + shift + p - clicar em <strong>Python Create Enviroment</strong> para criar uma pasta "isolada" com as bibliotecas usadas na disciplina</li>
-<li><strong>Instalar dependências:</strong><ul>
-<li>OPENGL: !pip install pyopengl</li>
-<li>GLFW: !pip install glfw</li>
-</ul>
-</li>
-</ul>
-<p>Testar com os códigos-base da Aula 3.</p>
-<h2 id="c-windows">C - Windows<a class="headerlink" href="#c-windows" title="Permanent link">&para;</a></h2>
+<h3 id="3-yarn-yet-another-resource-negotiator">3. YARN (Yet Another Resource Negotiator)<a class="headerlink" href="#3-yarn-yet-another-resource-negotiator" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Instalar o ambiente Mingw [<a href="http://mingw-w64.org/">http://mingw-w64.org/</a>].</li>
-<li>Fazer download do GLFW e copiar os arquivos nos diretórios (bin, include, lib, etc) nos respectivos diretórios do Mingw [<a href="https://www.glfw.org/download.html">https://www.glfw.org/download.html</a>].</li>
-<li>Fazer download do GLEW e copiar os arquivos nos diretórios (bin, include, lib, etc) nos respectivos diretórios do Mingw [<a href="http://glew.sourceforge.net/">http://glew.sourceforge.net/</a>].</li>
-<li>Adicionar
-  o diretório bin do Mingw no PATH do seu sistema operacional. Desta
-  forma, o comando "gcc" estará disponível a partir de um prompt de
-  comando.</li>
-<li>Para compilar: gcc main.c -lglfw3dll -lglew32 -lopengl32</li>
-<li>Observação 1: um ambiente pré-peparado está disponível em <a href="http://websensors.net.br/projects/scc0250icmc/mingw64-opengl.zip">http://websensors.net.br/projects/scc0250icmc/mingw64-opengl.zip</a></li>
-<li>Observação
-  2: se no momento de execução do programa for solicitado dll do GLFW e
-  GLEW, copie eles do Mingw para o mesmo diretório do seu executável.</li>
-<li>Testar com os códigos-base da Aula 3.</li>
+<li>Gerenciador de recursos do cluster</li>
+<li>Responsável por alocar recursos aos aplicativos</li>
+<li>Facilita a execução de diferentes tipos de aplicativos no mesmo cluster</li>
 </ul>
-<h2 id="c-linux-debian-e-ubuntu">C - Linux (Debian e Ubuntu)<a class="headerlink" href="#c-linux-debian-e-ubuntu" title="Permanent link">&para;</a></h2>
+<h2 id="caracteristicas-principais">Características principais:<a class="headerlink" href="#caracteristicas-principais" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Instalar os pacotes libglfw3-dev, mesa-common-dev, libglew-dev.</li>
-<li>Instalar o ambiente GCC (pacote build-essential).</li>
-<li>Para compilar: gcc main.c -lglfw -lGL -lGLEW -lm</li>
-<li>Testar com os códigos-base da Aula 3.</li>
+<li><strong>Escalabilidade horizontal</strong>: Pode escalar adicionando mais máquinas ao cluster</li>
+<li><strong>Tolerância a falhas</strong>: Detecta e recupera automaticamente de falhas de hardware</li>
+<li><strong>Processamento distribuído</strong>: Distribui o processamento em várias máquinas</li>
+<li><strong>Armazenamento de dados não estruturados</strong>: Suporta diferentes tipos de dados</li>
 </ul>
-<h2 id="java-linux-e-windows">Java - Linux e Windows<a class="headerlink" href="#java-linux-e-windows" title="Permanent link">&para;</a></h2>
+<h2 id="casos-de-uso-comuns">Casos de uso comuns:<a class="headerlink" href="#casos-de-uso-comuns" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Instalar o Java JDK mais recente (<a href="https://www.oracle.com/java/technologies/javase-downloads.html">https://www.oracle.com/java/technologies/javase-downloads.html</a>).</li>
-<li>Utilizar o código-base de exemplo disponibilizado na Aula 3 (possui as bibliotecas OpenGL e GLFW).</li>
+<li>Análise de grandes volumes de dados</li>
+<li>Processamento de logs e eventos</li>
+<li>Machine learning e inteligência artificial</li>
+<li>Armazenamento de dados de sensores e IoT</li>
+<li>Análise de redes sociais e comportamento do consumidor</li>
 </ul>
+<h2 id="vantagens">Vantagens:<a class="headerlink" href="#vantagens" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Custo reduzido em comparação com soluções proprietárias</li>
+<li>Flexibilidade para diferentes tipos de dados</li>
+<li>Escalabilidade linear com o aumento do hardware</li>
+<li>Comunidade ativa e suporte amplo</li>
+</ul>
+<h2 id="desvantagens">Desvantagens:<a class="headerlink" href="#desvantagens" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Não é adequado para operações em tempo real</li>
+<li>Complexidade de configuração e administração</li>
+<li>Overhead de processamento para tarefas simples</li>
+<li>Necessidade de conhecimento técnico avançado</li>
+</ul>
+<p>O Hadoop se tornou uma solução fundamental para empresas que precisam lidar com grandes volumes de dados, oferecendo uma alternativa escalável e econômica para armazenamento e processamento distribuído.</p>
+<hr />
 
 
 
