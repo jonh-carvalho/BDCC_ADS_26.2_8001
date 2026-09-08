@@ -7,11 +7,12 @@
 | Aula 03 - 18/08/2026 | :material-check: [Principais Serviços Aws](../Disciplina/docs/aula02/Principais-Servicos-AWS-Computacao-Armazenamento-e-Redes.pptx) <br> :material-check: [Computação](https://awseducate.instructure.com/courses/941)|
 | Aula 04 - 25/08/2026 | :material-check: Roteiros |
 | Aula 05 - 01/09/2026 | :material-check: Roteiros |
+| Aula 06 - 08/09/2026 | :material-check: [Introdução ao Armazenamento na Nuvem](https://awseducate.instructure.com/courses/920) |
+| Aula 07 - 15/09/2026 | :material-check: [Introdução ao Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/?trk=d04539bf-5991-4c63-855b-38fdf1088189&sc_channel=ps&ef_id=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE:G:s&s_kwcid=AL!4422!3!798517445697!p!!g!!elastic%20beanstalk!23600692275!190643552861&gad_campaignid=23600692275&gbraid=0AAAAADjHtp9BFn7Xzl0jEbWdUOPc34Af5&gclid=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE) |
+| Aula 08 - 22/09/2026 | :material-check:  |
+| Aula 09 - 29/09/2026 | :material-check: AP1 |
 
 <!--
-Aula 05 - 26/03/2026 | :material-check: Roteiro Nginx |
-Aula 06 - 02/04/2026 | :material-check: Feridado  |
-Aula 07 - 08/04/2026 | :material-check: [Introdução ao Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/?trk=d04539bf-5991-4c63-855b-38fdf1088189&sc_channel=ps&ef_id=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE:G:s&s_kwcid=AL!4422!3!798517445697!p!!g!!elastic%20beanstalk!23600692275!190643552861&gad_campaignid=23600692275&gbraid=0AAAAADjHtp9BFn7Xzl0jEbWdUOPc34Af5&gclid=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE) |
 Aula 08 - 16/04/2026 | :material-check: AP1 |
 Aula 09 - 23/04/2026 | :material-check: Feriado  |
 Aula 10 - 30/04/2026 | :material-check: Colunar e Orientado a Documentos(Repositórios) <br>:material-check: [RDS](https://awseducate.instructure.com/courses/1119/modules/items/19068) -  MySql |
