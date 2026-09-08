@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../05%20-%20nginxsite/">
+      
+      
+        <link rel="next" href="../06%20-%20s3/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Criação de MySQL no AWS Aurora - BDCC_ADS_26.2_8001</title>
+        <title>06 - Docker - BDCC_ADS_26.2_8001</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#criacao-de-mysql-no-aws-aurora" class="md-skip">
+        <a href="#1-criando-a-instancia-ec2" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Criação de MySQL no AWS Aurora
+              06 - Docker
             
           </span>
         </div>
@@ -252,10 +256,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../aulas/" class="md-tabs__link">
           
   
@@ -398,8 +404,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -411,17 +419,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -439,7 +450,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -482,8 +493,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -506,11 +519,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -531,7 +544,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -658,10 +671,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../06%20-%20docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 - Docker
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -677,6 +715,96 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criando-a-instancia-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Criando a Instância EC2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conectando-e-instalando-o-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Conectando e Instalando o Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-executando-um-container-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Executando um Container de Teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolucao-dos-principais-problemas-iniciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Resolução dos Principais Problemas Iniciais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Resolução dos Principais Problemas Iniciais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-1-erro-de-permissao-negada-permission-denied-ao-rodar-comandos-docker-sem-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1: Erro de "Permissão Negada" (Permission Denied) ao rodar comandos Docker sem sudo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema-2-a-pagina-nao-carrega-no-navegador-tempo-limite-esgotado-timeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2: A página não carrega no navegador (Tempo limite esgotado / Timeout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1086,6 +1214,64 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../aulas/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Disciplina
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../04%20-%20aws/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Roteiro
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1096,131 +1282,86 @@
   
 
 
-<h1 id="criacao-de-mysql-no-aws-aurora">Criação de MySQL no AWS Aurora<a class="headerlink" href="#criacao-de-mysql-no-aws-aurora" title="Permanent link">&para;</a></h1>
-<h2 id="1-criar-cluster-aurora">1. Criar Cluster Aurora<a class="headerlink" href="#1-criar-cluster-aurora" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Acesse o console AWS RDS</li>
-<li>Clique em "Create database"</li>
-<li>Escolha "MySQL" </li>
-<li>Configure:<ul>
-<li>Free tier</li>
-<li><strong>DB cluster identifier</strong>: <code>aula-cluster</code></li>
-<li><strong>Master username</strong>: <code>admin</code></li>
-<li><strong>Master password</strong>: defina uma senha</li>
-</ul>
-</li>
-<li>Clique em "Create database"</li>
-</ol>
-<h2 id="2-aguardar-disponibilidade">2. Aguardar Disponibilidade<a class="headerlink" href="#2-aguardar-disponibilidade" title="Permanent link">&para;</a></h2>
+  <h1>06 - Docker</h1>
+
+<p>Aqui está o <strong>roteiro básico de instalação e configuração do Docker no Amazon EC2</strong>, junto com a resolução dos obstáculos mais comuns enfrentados no início do processo.</p>
+<h3 id="1-criando-a-instancia-ec2">1. Criando a Instância EC2<a class="headerlink" href="#1-criando-a-instancia-ec2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Espere o status mudar para "Available" (5-10 minutos)</li>
-<li>Copie o <strong>endpoint</strong> da instância</li>
+<li>Acesse o console da AWS e crie uma nova instância.</li>
+<li>Escolha um sistema operacional base simples, como <strong>Ubuntu</strong> ou <strong>Amazon Linux 2023</strong>.</li>
+<li>Selecione um tipo de instância elegível para o nível gratuito, como <strong>t2.micro</strong> ou <strong>t3.micro</strong>.</li>
+<li><strong>Configuração do Security Group (Essencial):</strong><ul>
+<li><strong>Porta 22 (SSH):</strong> Liberada e restrita apenas ao seu IP para garantir o acesso seguro.</li>
+<li><strong>Porta da sua aplicação (ex: 80 para HTTP ou 3000):</strong> Liberada para qualquer lugar (<code>0.0.0.0/0</code>) para que a aplicação fique acessível publicamente.</li>
 </ul>
-<h2 id="3-conectar-ao-banco-por-onde">3. Conectar ao Banco (por onde?)<a class="headerlink" href="#3-conectar-ao-banco-por-onde" title="Permanent link">&para;</a></h2>
-<p>Você pode conectar de <strong>3 lugares</strong>:</p>
-<ol>
-<li><strong>AWS CloudShell</strong> (mais fácil, sem instalar nada)</li>
-</ol>
-<blockquote>
-<p>Antes de conectar, no <strong>Security Group</strong> do Aurora, libere a porta <strong>3306</strong> para a origem correta (EC2, CloudShell ou seu IP).</p>
-</blockquote>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>aula-cluster.cuj2q0ya6uad.us-east-1.rds.amazonaws.com<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
-</span></code></pre></div>
-<p>Se o comando não funcionar, instale o cliente MySQL:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Ubuntu/Debian</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mysql-client
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
-</span></code></pre></div>
-<h2 id="4-criar-tabela">4. Criar Tabela<a class="headerlink" href="#4-criar-tabela" title="Permanent link">&para;</a></h2>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">meubanco</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">USE</span><span class="w"> </span><span class="n">meubanco</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="n">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="n">nome</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="n">email</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">);</span>
-</span></code></pre></div>
-<h2 id="5-operacoes-basicas">5. Operações Básicas<a class="headerlink" href="#5-operacoes-basicas" title="Permanent link">&para;</a></h2>
-<p><strong>Inserir dados:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nome</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;João&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;joao@email.com&#39;</span><span class="p">);</span>
-</span></code></pre></div></p>
-<p><strong>Consultar dados:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
-</span></code></pre></div></p>
-<p><strong>Atualizar:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">nome</span><span class="o">=</span><span class="s1">&#39;João Silva&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-</span></code></pre></div></p>
-<p><strong>Deletar:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-</span></code></pre></div></p>
-<ol>
-<li><strong>EC2 na mesma VPC</strong> do Aurora (recomendado para laboratório)</li>
-</ol>
-<p><strong>Passo a passo (via EC2):</strong>
-   1. Acesse a instância:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ssh<span class="w"> </span>-i<span class="w"> </span>sua-chave.pem<span class="w"> </span>ec2-user@IP_PUBLICO_DA_EC2
-</span></code></pre></div>
-      &gt; Em Ubuntu, o usuário costuma ser <code>ubuntu</code>.</p>
-<ol>
-<li>
-<p>Instale o cliente MySQL (se necessário):
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
-</span></code></pre></div></p>
 </li>
-<li>
-<p>Conecte no Aurora usando o endpoint do cluster:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>&lt;endpoint-do-aurora&gt;<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Teste a conexão:
-      <div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
-</span></code></pre></div></p>
-</li>
-</ol>
-<blockquote>
-<p>Se falhar, valide o Security Group: porta <strong>3306</strong> liberada da EC2 para o Aurora.</p>
-</blockquote>
-<ol>
-<li><strong>Seu computador local</strong> (se liberar acesso no Security Group)</li>
-</ol>
-<p><strong>Passo a passo (via computador local):</strong>
-   1. Instale o cliente MySQL:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># macOS (Homebrew)</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>brew<span class="w"> </span>install<span class="w"> </span>mysql-client
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># Windows (winget)</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>winget<span class="w"> </span>install<span class="w"> </span>Oracle.MySQL
-</span></code></pre></div></p>
-<ol>
-<li>
-<p>No Aurora, confirme:</p>
+</ul>
+<h3 id="2-conectando-e-instalando-o-docker">2. Conectando e Instalando o Docker<a class="headerlink" href="#2-conectando-e-instalando-o-docker" title="Permanent link">&para;</a></h3>
+<p>Conecte-se à sua máquina virtual via SSH e execute os comandos conforme o sistema operacional escolhido:</p>
 <ul>
-<li><strong>Public access</strong> habilitado (se for acesso direto pela internet)</li>
-<li><strong>Security Group</strong> com porta <strong>3306</strong> liberada para <strong>seu IP público</strong> (<code>x.x.x.x/32</code>)</li>
+<li>
+<p><strong>Opção A: Se você utilizou Ubuntu</strong>
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span>-y
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>-y
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>docker
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+</span></code></pre></div>
+    <em>(Nota: Recomenda-se fechar a conexão SSH e entrar novamente para aplicar a permissão do grupo de usuários).</em></p>
+</li>
+<li>
+<p><strong>Opção B: Se você utilizou Amazon Linux 2023</strong>
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>yum<span class="w"> </span>update<span class="w"> </span>-y
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>docker<span class="w"> </span>-y
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>service<span class="w"> </span>docker<span class="w"> </span>start
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>docker<span class="w"> </span>ec2-user
+</span></code></pre></div>
+    <em>(Nota: Recomenda-se fechar a conexão SSH e entrar novamente para aplicar a permissão).</em></p>
+</li>
 </ul>
-</li>
-<li>
-<p>Conecte usando o endpoint do cluster:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>&lt;endpoint-do-aurora&gt;<span class="w"> </span>-P<span class="w"> </span><span class="m">3306</span><span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Teste:
-      <div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
-</span></code></pre></div></p>
-</li>
+<h3 id="3-executando-um-container-de-teste">3. Executando um Container de Teste<a class="headerlink" href="#3-executando-um-container-de-teste" title="Permanent link">&para;</a></h3>
+<p>Para verificar se tudo está funcionando corretamente, faça o deploy de uma imagem pública de testes (servidor Nginx):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span>nginx
+</span></code></pre></div>
+Isso fará o download do servidor Nginx e o deixará rodando em segundo plano, expondo-o na porta 80 da sua instância EC2.</p>
+<p>Libere o tráfego de entrada: No console web da AWS, acesse a aba Segurança (Security) da sua instância EC2, clique para editar as Regras de Entrada (Inbound Rules) de seu Security Group e adicione uma regra permitindo tráfego HTTP na porta 80 vindo de qualquer lugar (0.0.0.0/0).</p>
+<p>Para testar, abra o navegador e acesse o <strong>IP público da sua instância</strong>. Você deverá ver a página padrão do Nginx.</p>
+<p>Como a aplicação está rodando em um container, você pode apontar a pasta do projeto para o container e acessar os arquivos diretamente.</p>
+<p>Exemplo: Se você tiver um projeto html, css e javascript, pode rodar o container apontando para a pasta do projeto:</p>
+<p>Pasta site: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>index.html
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>css/style.css
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>js/index.js
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span>-v<span class="w"> </span>/caminho/para/seu/projeto:/usr/share/nginx/html<span class="w"> </span>nginx
+</span></code></pre></div>
+<hr />
+<h3 id="resolucao-dos-principais-problemas-iniciais">🛠️ Resolução dos Principais Problemas Iniciais<a class="headerlink" href="#resolucao-dos-principais-problemas-iniciais" title="Permanent link">&para;</a></h3>
+<h4 id="problema-1-erro-de-permissao-negada-permission-denied-ao-rodar-comandos-docker-sem-sudo">Problema 1: Erro de "Permissão Negada" (Permission Denied) ao rodar comandos Docker sem <code>sudo</code><a class="headerlink" href="#problema-1-erro-de-permissao-negada-permission-denied-ao-rodar-comandos-docker-sem-sudo" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Por que acontece:</strong> O usuário padrão do sistema (<code>ubuntu</code> ou <code>ec2-user</code>) não tem permissões administrativas para se comunicar diretamente com o serviço do Docker por padrão.</li>
+<li><strong>Como resolver:</strong><ol>
+<li>Adicione o seu usuário ao grupo do Docker:</li>
+<li>No <strong>Ubuntu</strong>: <code>sudo usermod -aG docker ubuntu</code></li>
+<li>No <strong>Amazon Linux 2023</strong>: <code>sudo usermod -aG docker ec2-user</code></li>
+<li>Execute o comando abaixo para recarregar as configurações de grupo no terminal sem precisar fechar a sessão atual:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>newgrp<span class="w"> </span>docker
+</span></code></pre></div>
+   <em>(Se preferir, você também pode simplesmente fechar o terminal SSH e conectar-se novamente).</em></li>
 </ol>
-<blockquote>
-<p>Se não conectar, valide VPC/Subnet, rota/NACL e se o endpoint está correto.</p>
-</blockquote>
+</li>
+</ul>
+<h4 id="problema-2-a-pagina-nao-carrega-no-navegador-tempo-limite-esgotado-timeout">Problema 2: A página não carrega no navegador (Tempo limite esgotado / Timeout)<a class="headerlink" href="#problema-2-a-pagina-nao-carrega-no-navegador-tempo-limite-esgotado-timeout" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Por que acontece:</strong> Normalmente, o tráfego HTTP é bloqueado pelo firewall da AWS (Security Group) ou você pode estar tentando acessar a máquina usando um endereço IP incorreto.</li>
+<li><strong>Como resolver:</strong><ol>
+<li><strong>Pegue o IP público correto:</strong> Com o terminal aberto no seu EC2, execute o comando abaixo para consultar o IP externo real da sua máquina:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>icanhazip.com
+</span></code></pre></div></li>
+<li><strong>Libere o tráfego de entrada:</strong> No console web da AWS, acesse a aba <strong>Segurança (Security)</strong> da sua instância EC2, clique para editar as <strong>Regras de Entrada (Inbound Rules)</strong> de seu Security Group e adicione uma regra permitindo tráfego <strong>HTTP na porta 80</strong> vindo de qualquer lugar (<code>0.0.0.0/0</code>).</li>
+</ol>
+</li>
+</ul>
 
 
 
