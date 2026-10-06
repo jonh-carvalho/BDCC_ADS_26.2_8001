@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../07%20-%20eb/">
+        <link rel="prev" href="../10%20-%20aurora/">
       
       
-        <link rel="next" href="../10%20-%20docker_rds/">
+        <link rel="next" href="../../../Avalia/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>10 - Aurora RDS - BDCC_ADS_26.2_8001</title>
+        <title>10 - RDS no Docker EC2 - BDCC_ADS_26.2_8001</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#criacao-de-mysql-no-aws-aurora" class="md-skip">
+        <a href="#postgresql-no-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10 - Aurora RDS
+              10 - RDS no Docker EC2
             
           </span>
         </div>
@@ -761,6 +761,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../10%20-%20aurora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 - Aurora RDS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -778,7 +806,7 @@
   <span class="md-ellipsis">
     
   
-    10 - Aurora RDS
+    10 - RDS no Docker EC2
   
 
     
@@ -796,7 +824,7 @@
   <span class="md-ellipsis">
     
   
-    10 - Aurora RDS
+    10 - RDS no Docker EC2
   
 
     
@@ -820,22 +848,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criacao-de-mysql-no-aws-aurora" class="md-nav__link">
+  <a href="#postgresql-no-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Criação de MySQL no AWS Aurora
+        PostgreSQL no Docker
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Criação de MySQL no AWS Aurora">
+    <nav class="md-nav" aria-label="PostgreSQL no Docker">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-criar-cluster-aurora" class="md-nav__link">
+  <a href="#objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Criar Cluster Aurora
+        Objetivo
       
     </span>
   </a>
@@ -843,10 +871,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-aguardar-disponibilidade" class="md-nav__link">
+  <a href="#pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Aguardar Disponibilidade
+        Pré-requisitos
       
     </span>
   </a>
@@ -854,34 +882,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-conectar-ao-banco-por-onde" class="md-nav__link">
+  <a href="#parte-1-executando-o-postgresql-com-docker-run" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Conectar ao Banco (por onde?)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Conectar ao Banco (por onde?)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#i-aws-cloudshell-mais-facil-sem-instalar-nada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        I. AWS CloudShell (mais fácil, sem instalar nada)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="I. AWS CloudShell (mais fácil, sem instalar nada)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#4-criar-tabela" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Criar Tabela
+        Parte 1 - Executando o PostgreSQL com docker run
       
     </span>
   </a>
@@ -889,10 +893,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-operacoes-basicas" class="md-nav__link">
+  <a href="#parte-2-acessando-o-banco" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Operações Básicas
+        Parte 2 - Acessando o banco
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-criando-dados-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3 - Criando dados de teste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-testando-a-persistencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4 - Testando a persistência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-5-usando-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 5 - Usando Docker Compose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-6-backup-e-restore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 6 - Backup e restore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-7-executando-na-aws-ec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 7 - Executando na AWS EC2
       
     </span>
   </a>
@@ -903,36 +962,37 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ii-ec2-na-mesma-vpc-do-aurora-recomendado-para-laboratorio" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#parte-8-backup-e-restore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        II. EC2 na mesma VPC do Aurora (recomendado para laboratório)
+        Parte 8 - Backup e restore
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#iii-seu-computador-local-se-liberar-acesso-no-security-group" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#desafios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        III. Seu computador local (se liberar acesso no Security Group)
+        Desafios
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#limpeza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limpeza
+      
+    </span>
+  </a>
   
 </li>
       
@@ -940,34 +1000,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10%20-%20docker_rds/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    10 - RDS no Docker EC2
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1417,128 +1449,169 @@
   
 
 
-  <h1>10 - Aurora RDS</h1>
+  <h1>10 - RDS no Docker EC2</h1>
 
-<h2 id="criacao-de-mysql-no-aws-aurora">Criação de MySQL no AWS Aurora<a class="headerlink" href="#criacao-de-mysql-no-aws-aurora" title="Permanent link">&para;</a></h2>
-<h3 id="1-criar-cluster-aurora">1. Criar Cluster Aurora<a class="headerlink" href="#1-criar-cluster-aurora" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Acesse o console AWS RDS</li>
-<li>Clique em "Create database"</li>
-<li>Escolha "MySQL" </li>
-<li>Configure:<ul>
-<li>Free tier</li>
-<li><strong>DB cluster identifier</strong>: <code>aula-cluster</code></li>
-<li><strong>Master username</strong>: <code>admin</code></li>
-<li><strong>Master password</strong>: defina uma senha</li>
-</ul>
-</li>
-<li>Clique em "Create database"</li>
-</ol>
-<h3 id="2-aguardar-disponibilidade">2. Aguardar Disponibilidade<a class="headerlink" href="#2-aguardar-disponibilidade" title="Permanent link">&para;</a></h3>
+<h2 id="postgresql-no-docker">PostgreSQL no Docker<a class="headerlink" href="#postgresql-no-docker" title="Permanent link">&para;</a></h2>
+<h3 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h3>
+<p>Subir um banco PostgreSQL com suporte à extensão pgvector usando a imagem <code>pgvector/pgvector:pg16</code> em um container Docker, persistir os dados e conectar-se a ele (simulando um serviço gerenciado como o RDS).</p>
+<h3 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Espere o status mudar para "Available" (5-10 minutos)</li>
-<li>Copie o <strong>endpoint</strong> da instância</li>
+<li>Docker instalado (<code>docker --version</code>)</li>
+<li><strong>Amazon Linux 2023</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>yum<span class="w"> </span>update<span class="w"> </span>-y
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>docker<span class="w"> </span>-y
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>service<span class="w"> </span>docker<span class="w"> </span>start
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>docker<span class="w"> </span>ec2-user
+</span></code></pre></div></li>
+<li>Cliente <code>psql</code> (opcional) ou DBeaver/pgAdmin</li>
 </ul>
-<h3 id="3-conectar-ao-banco-por-onde">3. Conectar ao Banco (por onde?)<a class="headerlink" href="#3-conectar-ao-banco-por-onde" title="Permanent link">&para;</a></h3>
-<p>Você pode conectar de <strong>3 lugares</strong>:</p>
-<h4 id="i-aws-cloudshell-mais-facil-sem-instalar-nada">I. <strong>AWS CloudShell</strong> (mais fácil, sem instalar nada)<a class="headerlink" href="#i-aws-cloudshell-mais-facil-sem-instalar-nada" title="Permanent link">&para;</a></h4>
-<blockquote>
-<p>Antes de conectar, no <strong>Security Group</strong> do Aurora, libere a porta <strong>3306</strong> para a origem correta (EC2, CloudShell ou seu IP).</p>
-</blockquote>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>aula-cluster.cuj2q0ya6uad.us-east-1.rds.amazonaws.com<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
+<h3 id="parte-1-executando-o-postgresql-com-docker-run">Parte 1 - Executando o PostgreSQL com <code>docker run</code><a class="headerlink" href="#parte-1-executando-o-postgresql-com-docker-run" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Baixe a imagem:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>pgvector/pgvector:pg16
 </span></code></pre></div>
-<p>Se o comando não funcionar, instale o cliente MySQL:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Ubuntu/Debian</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mysql-client
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
+<ol>
+<li>Crie um volume para persistência:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>pgdata
 </span></code></pre></div>
-<h5 id="4-criar-tabela">4. Criar Tabela<a class="headerlink" href="#4-criar-tabela" title="Permanent link">&para;</a></h5>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">meubanco</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">USE</span><span class="w"> </span><span class="n">meubanco</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="n">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="n">nome</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="n">email</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">);</span>
+<ol>
+<li>Execute o container:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>meu-postgres<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_USER</span><span class="o">=</span>admin<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>admin123<span class="w"> </span>-e<span class="w"> </span><span class="nv">POSTGRES_DB</span><span class="o">=</span>aula<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span>:5432<span class="w"> </span>-v<span class="w"> </span>pgdata:/var/lib/postgresql/data<span class="w"> </span>pgvector/pgvector:pg16
 </span></code></pre></div>
-<h5 id="5-operacoes-basicas">5. Operações Básicas<a class="headerlink" href="#5-operacoes-basicas" title="Permanent link">&para;</a></h5>
-<p><strong>Inserir dados:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nome</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;João&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;joao@email.com&#39;</span><span class="p">);</span>
-</span></code></pre></div></p>
-<p><strong>Consultar dados:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
-</span></code></pre></div></p>
-<p><strong>Atualizar:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">nome</span><span class="o">=</span><span class="s1">&#39;João Silva&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-</span></code></pre></div></p>
-<p><strong>Deletar:</strong>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-</span></code></pre></div></p>
+<ol>
+<li>Verifique se está rodando:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>ps
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>logs<span class="w"> </span>meu-postgres
+</span></code></pre></div>
+<h3 id="parte-2-acessando-o-banco">Parte 2 - Acessando o banco<a class="headerlink" href="#parte-2-acessando-o-banco" title="Permanent link">&para;</a></h3>
+<p>Via container:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>meu-postgres<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>aula
+</span></code></pre></div>
+<p>Via cliente local:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>aula
+</span></code></pre></div>
+<h3 id="parte-3-criando-dados-de-teste">Parte 3 - Criando dados de teste<a class="headerlink" href="#parte-3-criando-dados-de-teste" title="Permanent link">&para;</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">alunos</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">SERIAL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="n">nome</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="n">curso</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">alunos</span><span class="w"> </span><span class="p">(</span><span class="n">nome</span><span class="p">,</span><span class="w"> </span><span class="n">curso</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">(</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ADS&#39;</span><span class="p">),</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">(</span><span class="s1">&#39;Bruno&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;ADS&#39;</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">alunos</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- Habilite a extensão pgvector no banco aula</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">EXTENSION</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">vector</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Saia com <code>\q</code>.</p>
+<h3 id="parte-4-testando-a-persistencia">Parte 4 - Testando a persistência<a class="headerlink" href="#parte-4-testando-a-persistencia" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>meu-postgres
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>meu-postgres
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Recrie o container com o mesmo comando da Parte 1 (passo 3)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>meu-postgres<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>aula<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;SELECT * FROM alunos;&quot;</span>
+</span></code></pre></div>
+<p>Os dados devem continuar disponíveis, pois estão no volume <code>pgdata</code>.</p>
 <hr />
-<h4 id="ii-ec2-na-mesma-vpc-do-aurora-recomendado-para-laboratorio">II. <strong>EC2 na mesma VPC</strong> do Aurora (recomendado para laboratório)<a class="headerlink" href="#ii-ec2-na-mesma-vpc-do-aurora-recomendado-para-laboratorio" title="Permanent link">&para;</a></h4>
-<p><strong>Passo a passo (via EC2):</strong>
-   1. Acesse a instância:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ssh<span class="w"> </span>-i<span class="w"> </span>sua-chave.pem<span class="w"> </span>ec2-user@IP_PUBLICO_DA_EC2
+<h3 id="parte-5-usando-docker-compose">Parte 5 - Usando Docker Compose<a class="headerlink" href="#parte-5-usando-docker-compose" title="Permanent link">&para;</a></h3>
+<p>Crie o arquivo <code>docker-compose.yml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nt">services</span><span class="p">:</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nt">db</span><span class="p">:</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pgvector/pgvector:pg16</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meu-postgres</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">      </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">      </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin123</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">      </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">aula</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;5432:5432&quot;</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pgdata:/var/lib/postgresql/data</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span><span class="nt">healthcheck</span><span class="p">:</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">      </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD-SHELL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;pg_isready</span><span class="nv"> </span><span class="s">-U</span><span class="nv"> </span><span class="s">admin</span><span class="nv"> </span><span class="s">-d</span><span class="nv"> </span><span class="s">aula&quot;</span><span class="p p-Indicator">]</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">      </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">      </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">  </span><span class="nt">pgadmin</span><span class="p">:</span>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dpage/pgadmin4</span>
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+</span><span id="__span-13-23"><a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="w">      </span><span class="nt">PGADMIN_DEFAULT_EMAIL</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin@admin.com</span>
+</span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="w">      </span><span class="nt">PGADMIN_DEFAULT_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin123</span>
+</span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+</span><span id="__span-13-26"><a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8080:80&quot;</span>
+</span><span id="__span-13-27"><a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span>
+</span><span id="__span-13-28"><a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db</span>
+</span><span id="__span-13-29"><a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>
+</span><span id="__span-13-30"><a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a><span class="nt">volumes</span><span class="p">:</span>
+</span><span id="__span-13-31"><a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a><span class="w">  </span><span class="nt">pgdata</span><span class="p">:</span>
 </span></code></pre></div>
-      &gt; Em Ubuntu, o usuário costuma ser <code>ubuntu</code>.</p>
+<p>Comandos:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w">      </span><span class="c1"># mantém os dados</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w"> </span>-v<span class="w">   </span><span class="c1"># remove também o volume</span>
+</span></code></pre></div>
+<p>Acesse o pgAdmin em <code>http://localhost:8080</code> e registre o servidor com host <code>db</code>, porta <code>5432</code>, usuário <code>admin</code>.</p>
+<h3 id="parte-6-backup-e-restore">Parte 6 - Backup e restore<a class="headerlink" href="#parte-6-backup-e-restore" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>meu-postgres<span class="w"> </span>pg_dump<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>aula<span class="w"> </span>&gt;<span class="w"> </span>backup.sql
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>meu-postgres<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>aula<span class="w"> </span>&lt;<span class="w"> </span>backup.sql
+</span></code></pre></div>
+<h3 id="parte-7-executando-na-aws-ec2">Parte 7 - Executando na AWS EC2<a class="headerlink" href="#parte-7-executando-na-aws-ec2" title="Permanent link">&para;</a></h3>
+<p>O mesmo Docker Compose pode ser usado em uma instância EC2 Linux, com alguns cuidados:</p>
 <ol>
-<li>
-<p>Instale o cliente MySQL (se necessário):
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Conecte no Aurora usando o endpoint do cluster:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>&lt;endpoint-do-aurora&gt;<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Teste a conexão:
-      <div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
-</span></code></pre></div></p>
-</li>
+<li>Crie a instância em uma VPC e instale Docker e o plugin Docker Compose conforme as instruções da distribuição escolhida. Restrinja o acesso SSH (porta 22) ao seu IP.</li>
 </ol>
-<blockquote>
-<p>Se falhar, valide o Security Group: porta <strong>3306</strong> liberada da EC2 para o Aurora.</p>
-</blockquote>
-<h4 id="iii-seu-computador-local-se-liberar-acesso-no-security-group">III. <strong>Seu computador local</strong> (se liberar acesso no Security Group)<a class="headerlink" href="#iii-seu-computador-local-se-liberar-acesso-no-security-group" title="Permanent link">&para;</a></h4>
-<p><strong>Passo a passo (via computador local):</strong>
-   1. Instale o cliente MySQL:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Amazon Linux</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb105
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># macOS (Homebrew)</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>brew<span class="w"> </span>install<span class="w"> </span>mysql-client
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># Windows (winget)</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>winget<span class="w"> </span>install<span class="w"> </span>Oracle.MySQL
-</span></code></pre></div></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Amazon Linux 2023 </span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="c1"># Install docker</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>sudo<span class="w"> </span>yum<span class="w"> </span>update<span class="w"> </span>-y
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>docker<span class="w"> </span>-y
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>docker
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="c1"># Install plugin docker compose v2</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>docker-compose-plugin<span class="w"> </span>-y
+</span></code></pre></div>
 <ol>
-<li>
-<p>No Aurora, confirme:</p>
-<ul>
-<li><strong>Public access</strong> habilitado (se for acesso direto pela internet)</li>
-<li><strong>Security Group</strong> com porta <strong>3306</strong> liberada para <strong>seu IP público</strong> (<code>x.x.x.x/32</code>)</li>
-</ul>
-</li>
-<li>
-<p>Conecte usando o endpoint do cluster:
-      <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mysql<span class="w"> </span>-h<span class="w"> </span>&lt;endpoint-do-aurora&gt;<span class="w"> </span>-P<span class="w"> </span><span class="m">3306</span><span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p
-</span></code></pre></div></p>
-</li>
-<li>
-<p>Teste:
-      <div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
-</span></code></pre></div></p>
-</li>
+<li>Transfira o <code>docker-compose.yml</code> para a instância e inicie os serviços com: </li>
 </ol>
-<blockquote>
-<p>Se não conectar, valide VPC/Subnet, rota/NACL e se o endpoint está correto.</p>
-</blockquote>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</span></code></pre></div>
+<p>Publique apenas as portas necessárias.</p>
+<ol>
+<li>No grupo de segurança da EC2, não libere as portas <code>5432</code> nem <code>8080</code> para <code>0.0.0.0/0</code>. Se precisar de acesso direto, permita somente seu IP/CIDR. Prefira VPN, túnel SSH ou acesso por uma aplicação/backend dentro da VPC.</li>
+</ol>
+<p>Evite expor o pgAdmin publicamente; se necessário, proteja-o com HTTPS e controles de acesso.</p>
+<ol>
+<li>Troque as senhas de exemplo por senhas fortes e não armazene credenciais reais no repositório. Use um arquivo <code>.env</code> com permissões restritas ou um serviço de segredos; <code>.env</code> não é criptografado.</li>
+<li>O volume nomeado <code>pgdata</code> persiste os dados no armazenamento da instância, mas não é backup e pode ser perdido junto com ela. Faça backups periódicos fora da EC2 (por exemplo, no Amazon S3), teste a restauração e planeje armazenamento persistente e recuperação.</li>
+<li>Atualize o sistema e as imagens, monitore espaço em disco e logs. Uma única EC2 não oferece, por si só, alta disponibilidade nem backups gerenciados como o Amazon RDS.</li>
+</ol>
+<p>Para desenvolvimento, acesse o banco sem abrir a porta publicamente usando um túnel SSH local, por exemplo <code>ssh -L 5433:localhost:5432 usuario@IP_PUBLICO_EC2</code>, e conecte o cliente a <code>localhost:5433</code>.</p>
+<h2 id="parte-8-backup-e-restore">Parte 8 - Backup e restore<a class="headerlink" href="#parte-8-backup-e-restore" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>meu-postgres<span class="w"> </span>pg_dump<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>aula<span class="w"> </span>&gt;<span class="w"> </span>backup.sql
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>meu-postgres<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>aula<span class="w"> </span>&lt;<span class="w"> </span>backup.sql
+</span></code></pre></div>
+<h2 id="desafios">Desafios<a class="headerlink" href="#desafios" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Altere a porta local para <code>5433</code> e conecte-se novamente.</li>
+<li>Use um arquivo <code>.env</code> para guardar usuário e senha.</li>
+<li>Adicione um script <code>init.sql</code> em <code>/docker-entrypoint-initdb.d/</code> para criar tabelas automaticamente.</li>
+<li>Conecte uma aplicação (Python/Java) ao banco no container.</li>
+</ol>
+<h2 id="limpeza">Limpeza<a class="headerlink" href="#limpeza" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>down<span class="w"> </span>-v
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>docker<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>meu-postgres
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>docker<span class="w"> </span>volume<span class="w"> </span>rm<span class="w"> </span>pgdata
+</span></code></pre></div>
 
 
 
