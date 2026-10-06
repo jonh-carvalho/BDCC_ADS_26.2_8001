@@ -16,7 +16,7 @@ Aula 11 - 13/10/2026 | :material-check: Colunar e Orientado a Documentos(Reposit
 Aula 12 - 20/10/2026 | :material-check: Documentos |
 Aula 13 - 27/10/2026 | :material-check:  |
 Aula 14 - 03/11/2026 | :material-check: [Rest RDS e Rest S3](https://github.com/jonh-carvalho/apiawsEB)|
-Aula 15 - 10/11/2026 | :material-check: Feriado |
+Aula 15 - 10/11/2026 | :material-check: |
 Aula 16 - 17/11/2026 | :material-check: AP2 |
 Aula 17 - 24/11/2026 | :material-check: |
 Aula 18 - 01/12/2026 | :material-check: AS |
