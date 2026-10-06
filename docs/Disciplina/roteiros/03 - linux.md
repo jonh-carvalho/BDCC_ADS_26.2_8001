@@ -1,4 +1,4 @@
-### **Linux para Iniciantes** — Do Zero ao Controle do Sistema**
+## **Linux para Iniciantes — Do Zero ao Controle do Sistema**
 
 **Objetivo:** Ao final deste roteiro, o aluno deve ser capaz de navegar e operar um sistema Linux pela linha de comando (Bash), realizando tarefas essenciais de administração: gerenciar serviços, monitorar recursos, manipular arquivos e disco, instalar pacotes e aplicar configurações básicas de rede e segurança.
 
@@ -10,31 +10,6 @@
 
 !!! tip "Dica"
     Todos os comandos deste roteiro devem ser executados no terminal Linux da sua instância EC2. Cada seção pode ser praticada de forma independente.
-
----
-
-### **Acesso opcional pelo GitHub Codespaces**
-
-O GitHub Codespaces permite abrir um ambiente Linux de desenvolvimento diretamente no navegador, sem instalar ferramentas localmente.
-
-#### Criando um Codespace
-
-1. Acesse o repositório deste roteiro no GitHub e faça login na sua conta.
-2. Clique em **Code** e selecione a aba **Codespaces**.
-3. Clique em **Create codespace on `<branch>`**. Se necessário, escolha a branch desejada.
-4. Aguarde a criação e a inicialização do ambiente.
-
-#### Abrindo o Codespace no navegador
-
-1. Acesse [github.com/codespaces](https://github.com/codespaces).
-2. Em **Your codespaces**, localize o ambiente criado.
-3. Clique no nome do Codespace para abri-lo no navegador.
-4. Use o terminal integrado do VS Code Web para executar os comandos deste roteiro.
-
-!!! warning "Atenção"
-    O Codespaces pode consumir a cota gratuita ou gerar custos conforme o plano da conta. Interrompa ou exclua o ambiente quando terminar.
-
----
 
 ### **Parte 1 —** Gerenciamento de Sistema e Serviços
 
@@ -95,61 +70,20 @@ sudo systemctl enable sshd
 sudo systemctl disable sshd
 ```
 
-### 1.4 Gerenciando serviços com `service`
-
-```bash
-# Lista todos os serviços e seus status
-service --status-all
-
-# Verifica o status de um serviço específico (ex.: SSH)
-sudo service nginx status
-
-# Inicia um serviço
-sudo service nginx start
-
-# Para um serviço
-sudo service nginx stop
-
-# Reinicia um serviço (para e inicia novamente)
-sudo service nginx restart
-
-# Recarrega as configurações sem reiniciar o processo
-sudo service nginx reload
-
-# Habilita o serviço para iniciar automaticamente no boot
-sudo chkconfig nginx on
-
-# Desabilita o serviço no boot
-sudo chkconfig nginx off
-```
-
 #### 1.4 **Exercício prático** — Instalar e gerenciar o servidor web Nginx
 
 ```bash
 # 1. Instala o Nginx (Amazon Linux 2023)
 sudo dnf install nginx -y
 
-# No CodeSpace
-sudo apt update
-sudo apt install nginx -y
-
 # 2. Inicia o serviço
 sudo systemctl start nginx
-
-# 2. Inicia o serviço (alternativa com service)
-sudo service nginx start
 
 # 3. Verifica se está ativo
 systemctl status nginx
 
-# 3. Verifica se está ativo (alternativa com service)
-sudo service nginx status
-
 # 4. Habilita para iniciar no boot
 sudo systemctl enable nginx
-
-# 4. Habilita para iniciar no boot (alternativa com chkconfig)
-sudo chkconfig nginx on
 
 # 5. Testa a resposta local do servidor web
 curl http://localhost
@@ -200,7 +134,6 @@ du -sh /var/log/* | sort -rh | head -10
 
 # Monitora atividade de leitura/escrita no disco (pressione 'q' para sair)
 # Pode precisar instalar: sudo dnf install sysstat
-# ubuntu: sudo apt install sysstat
 iostat -x 1 5
 ```
 
@@ -343,35 +276,27 @@ Gerenciar pacotes significa instalar, atualizar e remover programas no Linux. O 
 ```bash
 # Atualiza a lista de pacotes disponíveis
 sudo dnf check-update
-# Ubuntu/Debian: sudo apt update
 
 # Atualiza todos os pacotes instalados
 sudo dnf upgrade -y
-# Ubuntu/Debian: sudo apt upgrade -y
 
 # Instala um pacote
 sudo dnf install git -y
-# Ubuntu/Debian: sudo apt install git -y
 
 # Remove um pacote
 sudo dnf remove git -y
-# Ubuntu/Debian: sudo apt remove git -y
 
 # Pesquisa um pacote disponível
 dnf search htop
-# Ubuntu/Debian: apt search htop
 
 # Exibe informações sobre um pacote
 dnf info nginx
-# Ubuntu/Debian: apt show nginx
 
 # Lista todos os pacotes instalados
 dnf list installed
-# Ubuntu/Debian: apt list --installed
 
 # Limpa o cache local de pacotes
 sudo dnf clean all
-# Ubuntu/Debian: sudo apt clean
 ```
 
 #### 4.2 Repositórios no Amazon Linux 2023
@@ -381,11 +306,9 @@ No Amazon Linux 2023, o fluxo principal de instalação usa `dnf` diretamente (n
 ```bash
 # Lista os repositórios habilitados
 dnf repolist
-# Ubuntu/Debian: apt policy
 
 # Exibe os módulos disponíveis (quando aplicável)
 dnf module list
-# Ubuntu/Debian: apt list --all-versions
 ```
 
 #### 4.3 Exercício prático — Instalar e verificar o Git
@@ -393,18 +316,15 @@ dnf module list
 ```bash
 # Instala o Git
 sudo dnf install git -y
-# Ubuntu/Debian: sudo apt install git -y
 
 # Verifica a versão instalada
 git --version
-
 
 # Exibe onde o binário foi instalado
 which git
 
 # Exibe informações completas do pacote git
 rpm -qi git
-# Ubuntu/Debian: apt show git
 ```
 
 ### **Parte 5** — Redes e Segurança
@@ -423,27 +343,21 @@ ifconfig
 ip route show
 
 # Testa conectividade com um host (Ctrl+C para parar)
-# sudo apt update && sudo apt install iputils-ping -y
 ping -c 4 google.com
 
 # Rastreia o caminho dos pacotes até um destino
 traceroute google.com
 # (instalar: sudo dnf install traceroute)
-# (instalar no Ubuntu: sudo apt install traceroute)
 
 # Verifica se uma porta está aberta em um host remoto
 nc -zv google.com 443
-# (instalar: sudo dnf install nmap-ncat)
-# (instalar no Ubuntu: sudo apt install netcat)
 
 # Faz resolução DNS de um nome de domínio
 nslookup google.com
-# (instalar no Ubuntu: sudo apt install dnsutils)
 
 # Alternativa moderna ao nslookup
 dig google.com
 # (instalar: sudo dnf install bind-utils)
-# (instalar no Ubuntu: sudo apt install dnsutils)
 ```
 
 #### 5.2 Monitoramento de conexões de rede
@@ -470,11 +384,8 @@ O `firewalld` e o `nftables` podem ser usados no Amazon Linux 2023. Neste roteir
 ```bash
 # Instala e inicia o firewalld
 sudo dnf install firewalld -y
-# Ubuntu/Debian: sudo apt install firewalld -y
 sudo systemctl start firewalld
-# service firewalld start
 sudo systemctl enable firewalld
-# service firewalld enable
 
 # Verifica o status do firewall
 sudo firewall-cmd --state
