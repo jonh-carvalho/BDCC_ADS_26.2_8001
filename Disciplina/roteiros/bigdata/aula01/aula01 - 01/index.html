@@ -952,9 +952,49 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Schema DDL Completo — SwiftTrack Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-configurar-o-ssh-para-permitir-autenticacao-por-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como configurar o SSH para permitir autenticação por senha:¶
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amazon Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#decisoes-de-design-antes-do-codigo" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -964,8 +1004,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#script-sql-completo-01_schemasql" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -975,8 +1015,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#queries-de-validacao-para-o-aluno-testar-as-constraints" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -986,8 +1026,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#verificando-os-indices-criados" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -997,8 +1037,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#pontos-de-discussao-para-a-aula" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1008,8 +1048,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#-" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1017,6 +1057,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1727,6 +1772,21 @@
 </ul>
 </li>
 </ul>
+<h3 id="como-configurar-o-ssh-para-permitir-autenticacao-por-senha">Como configurar o SSH para permitir autenticação por senha:¶<a class="headerlink" href="#como-configurar-o-ssh-para-permitir-autenticacao-por-senha" title="Permanent link">&para;</a></h3>
+<p>Conecte-se à instância via console:</p>
+<p>Acesse o AWS Management Console.
+Vá para a seção "EC2".
+Selecione a instância desejada.
+Clique em "Conectar" e siga as instruções para obter a senha.
+Edite o arquivo de configuração do SSH:</p>
+<p>sudo nano /etc/ssh/sshd_config
+Descomente ou adicione a linha:</p>
+<p>PasswordAuthentication yes
+Reinicie o serviço SSH:</p>
+<h1 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">&para;</a></h1>
+<p>sudo systemctl restart ssh</p>
+<h1 id="amazon-linux">Amazon Linux<a class="headerlink" href="#amazon-linux" title="Permanent link">&para;</a></h1>
+<p>sudo service sshd restart</p>
 <hr />
 <h2 id="decisoes-de-design-antes-do-codigo">Decisões de Design (Antes do Código)<a class="headerlink" href="#decisoes-de-design-antes-do-codigo" title="Permanent link">&para;</a></h2>
 <table>
