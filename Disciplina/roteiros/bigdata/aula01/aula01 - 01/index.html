@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../../../10%20-%20docker_rds/">
+      
+      
+        <link rel="next" href="../aula01%20-%2002_transaction/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Aula01 01 - BDCC_ADS_26.2_8001</title>
+        <title>11 - Transacional - BDCC_ADS_26.2_8001</title>
       
     
     
@@ -48,6 +52,10 @@
     
     
       <link rel="stylesheet" href="../../../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../../../../assets/mkdocs_puml/interaction.css">
     
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -107,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aula01   01
+              11 - Transacional
             
           </span>
         </div>
@@ -252,10 +260,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../../../aulas/" class="md-tabs__link">
           
   
@@ -398,8 +408,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -411,17 +423,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -439,7 +454,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -482,8 +497,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -505,6 +522,8 @@
       
         
       
+        
+      
     
     
     
@@ -512,11 +531,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -537,7 +556,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -795,6 +814,489 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_10" id="__nav_2_2_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Big Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Transacional
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Transacional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#schema-ddl-completo-swifttrack-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema DDL Completo — SwiftTrack Core
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-entidade-relacionamento-plantuml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama Entidade-Relacionamento (PlantUML)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagrama Entidade-Relacionamento (PlantUML)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pré-requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-do-postgresql-16-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup do PostgreSQL 16 (Docker)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisoes-de-design-antes-do-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisões de Design (Antes do Código)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script-sql-completo-01_schemasql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Script SQL Completo (01_schema.sql)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queries-de-validacao-para-o-aluno-testar-as-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queries de Validação (Para o Aluno Testar as Constraints)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificando-os-indices-criados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verificando os Índices Criados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos-de-discussao-para-a-aula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pontos de Discussão para a Aula
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicando-o-01_schemasql-no-docker-sem-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicando o 01_schema.sql no Docker (sem docker-compose)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicando o 01_schema.sql no Docker (sem docker-compose)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcao-1-pipe-direto-mais-rapida-recomendada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicando-o-comando" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explicando o comando:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saida-esperada-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saída esperada (sucesso):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcao-2-copiar-o-arquivo-para-o-container-mais-robusta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 2: Copiar o arquivo para o container (MAIS ROBUSTA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 3: Usar psql local (se tiver instalado na sua máquina)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validando-que-funcionou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validando que Funcionou
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-comuns-e-solucoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemas Comuns e Soluções
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemas Comuns e Soluções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erro-docker-exec-requires-at-least-2-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: docker: "exec" requires at least 2 arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-psql-fatal-database-swifttrack_core-does-not-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: psql: FATAL: database "swifttrack_core" does not exist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-could-not-find-file-tmp01_schemasql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: could not find file "/tmp/01_schema.sql"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-permission-denied-no-arquivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: permission denied no arquivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dica-bonus-script-de-reset-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dica Bônus: Script de "Reset Total"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo-pratico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo Prático
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aula01%20-%2002_transaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Analítico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aula01%20-%2003_seed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Data Lake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1176,6 +1678,82 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../../../aulas/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Disciplina
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../../04%20-%20aws/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Roteiro
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Big Data
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1188,6 +1766,10 @@
 
 <h2 id="schema-ddl-completo-swifttrack-core">Schema DDL Completo — SwiftTrack Core<a class="headerlink" href="#schema-ddl-completo-swifttrack-core" title="Permanent link">&para;</a></h2>
 <p>Abaixo está o script SQL completo e comentado para a criação do schema <code>swifttrack_core</code>. Ele foi desenhado para ser <strong>didático</strong> (com explicações embutidas) e <strong>robusto</strong> (pronto para produção).</p>
+<h2 id="diagrama-entidade-relacionamento-plantuml">Diagrama Entidade-Relacionamento (PlantUML)<a class="headerlink" href="#diagrama-entidade-relacionamento-plantuml" title="Permanent link">&para;</a></h2>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="CLASS" style="width:846px;height:839px;background:#FFFFFF;" width="846px" height="839px" viewBox="0 0 846 839" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.9beta4?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><g class="entity" data-qualified-name="customers" id="ent0001" data-source-line="5"><rect x="583.22" y="23.3" width="248.489" height="156.375" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="670.855" y="41.295" fill="#000" font-size="14" textLength="73.22">customers</text><line x1="584.22" y1="49.597" x2="830.709" y2="49.597" style="stroke:#181818;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="63.245" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="66.592" fill="#000" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="584.22" y1="73.894" x2="830.709" y2="73.894" style="stroke:#181818;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="87.542" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="90.889" fill="#000" font-size="14" textLength="222.489">document : VARCHAR(18) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="103.839" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="107.186" fill="#000" font-size="14" textLength="159.455">name : VARCHAR(200)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="120.136" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="123.483" fill="#000" font-size="14" textLength="199.37">email : VARCHAR(255) «UK»</text><text x="603.22" y="139.779" fill="#000" font-size="14" textLength="104.467">address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="152.73" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="156.076" fill="#000" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="169.027" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="172.373" fill="#000" font-size="14" textLength="192.186">updated_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="drivers" id="ent0002" data-source-line="16"><rect x="7" y="7" width="264.937" height="188.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="115.228" y="24.995" fill="#000" font-size="14" textLength="48.48">drivers</text><line x1="8" y1="33.297" x2="270.937" y2="33.297" style="stroke:#181818;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="46.945" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="50.292" fill="#000" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="8" y1="57.594" x2="270.937" y2="57.594" style="stroke:#181818;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="71.242" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="74.589" fill="#000" font-size="14" textLength="159.455">name : VARCHAR(200)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="87.539" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="90.886" fill="#000" font-size="14" textLength="173.366">cpf : VARCHAR(14) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="103.836" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="107.183" fill="#000" font-size="14" textLength="238.937">cnh_number : VARCHAR(11) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="120.133" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="123.479" fill="#000" font-size="14" textLength="167.371">cnh_category : CHAR(2)</text><text x="27" y="139.776" fill="#000" font-size="14" textLength="154.656">phone : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="152.727" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="156.073" fill="#000" font-size="14" textLength="142.693">is_active : BOOLEAN</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="169.023" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="172.37" fill="#000" font-size="14" textLength="108.459">hired_at : DATE</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="185.32" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="188.667" fill="#000" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="vehicles" id="ent0003" data-source-line="29"><rect x="306.76" y="15.15" width="241.407" height="172.672" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="398.886" y="33.145" fill="#000" font-size="14" textLength="57.155">vehicles</text><line x1="307.76" y1="41.447" x2="547.167" y2="41.447" style="stroke:#181818;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="55.095" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="58.442" fill="#000" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="307.76" y1="65.744" x2="547.167" y2="65.744" style="stroke:#181818;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="79.392" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="82.739" fill="#000" font-size="14" textLength="178.404">plate : VARCHAR(8) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="95.689" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="99.036" fill="#000" font-size="14" textLength="163.345">model : VARCHAR(100)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="111.986" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="115.333" fill="#000" font-size="14" textLength="215.407">manufacturer : VARCHAR(100)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="128.283" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="131.629" fill="#000" font-size="14" textLength="114.146">year : SMALLINT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="144.58" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="147.926" fill="#000" font-size="14" textLength="195.18">capacity_kg : NUMERIC(8,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="160.877" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="164.223" fill="#000" font-size="14" textLength="153.863">status : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="177.173" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="180.52" fill="#000" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="deliveries" id="ent0004" data-source-line="41"><rect x="366.67" y="255.97" width="231.598" height="254.156" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="448.604" y="273.965" fill="#000" font-size="14" textLength="67.73">deliveries</text><line x1="367.67" y1="282.267" x2="597.268" y2="282.267" style="stroke:#181818;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="295.915" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="299.262" fill="#000" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="367.67" y1="306.564" x2="597.268" y2="306.564" style="stroke:#181818;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="320.212" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="323.559" fill="#000" font-size="14" textLength="185.869">customer_id : BIGINT «FK»</text><text x="386.67" y="339.856" fill="#000" font-size="14" textLength="161.13">driver_id : BIGINT «FK»</text><text x="386.67" y="356.153" fill="#000" font-size="14" textLength="169.805">vehicle_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="369.103" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="372.449" fill="#000" font-size="14" textLength="151.327">origin_address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="385.4" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="388.746" fill="#000" font-size="14" textLength="189.909">destination_address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="401.697" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="405.043" fill="#000" font-size="14" textLength="183.278">weight_kg : NUMERIC(8,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="417.993" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="421.34" fill="#000" font-size="14" textLength="153.863">status : VARCHAR(20)</text><text x="386.67" y="437.637" fill="#000" font-size="14" textLength="205.598">scheduled_at : TIMESTAMPTZ</text><text x="386.67" y="453.934" fill="#000" font-size="14" textLength="204.812">picked_up_at : TIMESTAMPTZ</text><text x="386.67" y="470.231" fill="#000" font-size="14" textLength="199.404">delivered_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="483.181" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="486.528" fill="#000" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="499.478" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="502.824" fill="#000" font-size="14" textLength="192.186">updated_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="invoices" id="ent0005" data-source-line="58"><rect x="421.81" y="570.12" width="289.307" height="254.156" fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="537.91" y="588.115" fill="#000" font-size="14" textLength="57.107">invoices</text><line x1="422.81" y1="596.417" x2="710.117" y2="596.417" style="stroke:#181818;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="610.065" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="613.412" fill="#000" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="422.81" y1="620.714" x2="710.117" y2="620.714" style="stroke:#181818;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="634.362" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="637.709" fill="#000" font-size="14" textLength="176.162">delivery_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="650.659" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="654.006" fill="#000" font-size="14" textLength="185.869">customer_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="666.956" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="670.303" fill="#000" font-size="14" textLength="263.307">invoice_number : VARCHAR(20) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="683.253" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="686.599" fill="#000" font-size="14" textLength="114.516">series : CHAR(3)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="699.55" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="702.896" fill="#000" font-size="14" textLength="198.242">total_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="715.847" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="719.193" fill="#000" font-size="14" textLength="188.583">tax_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="732.143" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="735.49" fill="#000" font-size="14" textLength="189.205">net_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="748.44" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="751.787" fill="#000" font-size="14" textLength="153.863">status : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="764.737" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="768.084" fill="#000" font-size="14" textLength="178.821">issued_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="781.034" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="784.381" fill="#000" font-size="14" textLength="116.313">due_date : DATE</text><text x="441.81" y="800.678" fill="#000" font-size="14" textLength="164.213">paid_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="813.628" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="816.974" fill="#000" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0004" id="lnk6" data-source-line="75" data-link-type="crowfoot"><path d="M590.75,187.91 C590.75,211.43 590.75,211.85 590.75,237.66" style="stroke:#181818;stroke-width:1;" fill="none" id="customers-deliveries" codeLine="75"/><line x1="586.75" y1="183.91" x2="594.75" y2="183.91" style="stroke:#181818;stroke-width:1;"/><line x1="586.75" y1="186.91" x2="594.75" y2="186.91" style="stroke:#181818;stroke-width:1;"/><line x1="590.75" y1="187.91" x2="590.75" y2="179.91" style="stroke:#181818;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="596.75" y2="255.66" style="stroke:#181818;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="584.75" y2="255.66" style="stroke:#181818;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="590.75" y2="255.66" style="stroke:#181818;stroke-width:1;"/><ellipse cx="590.75" cy="241.66" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><text x="457.75" y="213.857" fill="#000" font-size="13" textLength="132.412">contrata (RESTRICT)</text></g><g class="link" data-entity-1="ent0002" data-entity-2="ent0004" id="lnk7" data-source-line="76" data-link-type="crowfoot"><path d="M287.37,192.28 C362.75,192.28 427.17,192.28 427.17,192.28 C427.17,192.28 427.17,202.67 427.17,237.54" style="stroke:#181818;stroke-width:1;" fill="none" id="drivers-deliveries" codeLine="76"/><line x1="283.37" y1="192.28" x2="272.37" y2="192.28" style="stroke:#181818;stroke-width:1;"/><ellipse cx="283.37" cy="192.28" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><line x1="276.37" y1="196.28" x2="276.37" y2="188.28" style="stroke:#181818;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="433.17" y2="255.54" style="stroke:#181818;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="421.17" y2="255.54" style="stroke:#181818;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="427.17" y2="255.54" style="stroke:#181818;stroke-width:1;"/><ellipse cx="427.17" cy="241.54" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><text x="319.9" y="205.347" fill="#000" font-size="13" textLength="123.195">conduz (SET NULL)</text></g><g class="link" data-entity-1="ent0003" data-entity-2="ent0004" id="lnk8" data-source-line="77" data-link-type="crowfoot"><path d="M487.67,203.26 C487.67,224.59 487.67,214.87 487.67,237.67" style="stroke:#181818;stroke-width:1;" fill="none" id="vehicles-deliveries" codeLine="77"/><line x1="487.67" y1="199.26" x2="487.67" y2="188.26" style="stroke:#181818;stroke-width:1;"/><ellipse cx="487.67" cy="199.26" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><line x1="483.67" y1="192.26" x2="491.67" y2="192.26" style="stroke:#181818;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="493.67" y2="255.67" style="stroke:#181818;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="481.67" y2="255.67" style="stroke:#181818;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="487.67" y2="255.67" style="stroke:#181818;stroke-width:1;"/><ellipse cx="487.67" cy="241.67" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><text x="342.67" y="235.027" fill="#000" font-size="13" textLength="144.574">transporta (SET NULL)</text></g><g class="link" data-entity-1="ent0004" data-entity-2="ent0005" id="lnk9" data-source-line="78" data-link-type="crowfoot"><path d="M510.04,518.37 C510.04,537.93 510.04,532.13 510.04,551.69" style="stroke:#181818;stroke-width:1;" fill="none" id="deliveries-invoices" codeLine="78"/><line x1="506.04" y1="514.37" x2="514.04" y2="514.37" style="stroke:#181818;stroke-width:1;"/><line x1="506.04" y1="517.37" x2="514.04" y2="517.37" style="stroke:#181818;stroke-width:1;"/><line x1="510.04" y1="518.37" x2="510.04" y2="510.37" style="stroke:#181818;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="516.04" y2="569.69" style="stroke:#181818;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="504.04" y2="569.69" style="stroke:#181818;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="510.04" y2="569.69" style="stroke:#181818;stroke-width:1;"/><ellipse cx="510.04" cy="555.69" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><text x="402.04" y="536.097" fill="#000" font-size="13" textLength="107.161">gera (RESTRICT)</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0005" id="lnk10" data-source-line="79" data-link-type="crowfoot"><path d="M654.69,187.98 C654.69,287.26 654.69,433.52 654.69,551.76" style="stroke:#181818;stroke-width:1;" fill="none" id="customers-invoices" codeLine="79"/><line x1="650.69" y1="183.98" x2="658.69" y2="183.98" style="stroke:#181818;stroke-width:1;"/><line x1="650.69" y1="186.98" x2="658.69" y2="186.98" style="stroke:#181818;stroke-width:1;"/><line x1="654.69" y1="187.98" x2="654.69" y2="179.98" style="stroke:#181818;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="660.69" y2="569.76" style="stroke:#181818;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="648.69" y2="569.76" style="stroke:#181818;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="654.69" y2="569.76" style="stroke:#181818;stroke-width:1;"/><ellipse cx="654.69" cy="555.76" rx="4" ry="4" fill="none" style="stroke:#181818;stroke-width:1;"/><text x="655.69" y="370.937" fill="#000" font-size="13" textLength="145.126">é faturado (RESTRICT)</text></g><?plantuml-src fLNRJjj047tFLsnv2b632IqIGWZ9fMaRaG1AJ5NrnHfsD_4gzgwrbq0A_Q1-Ht-iuzY6ZN2YeBvvVMPspfovx3iXQUeO9ucrkJaD0Wtt1pDX4tVd3DTKISkbFQ0g2qPYde18BpKik3L1DcUAcZXtMHfaO2pNWKrunat0-1HSQeDKp19xK1Yq4e4XgD0qvIqp5p873Hb9XUHscNEYj4rKguMHX5sIFUgCLHdNPe-08SydyjWYf4C48wVaq-3hf3yUX4DoTdPpUNwEIBUxWf6Lo_0cDFeUZY--XUDsxsGVpMvBimwHa74FFJeyt5_zvnccvmF7nvuVCAQvCOX7_H_Hoe5g3fQp68fWqM3KdqJXw2RwkG9Tpfh1to-9CYqMTPhLzsv9Rag1vbC_xuzhULEPnD9bTrpxDhrNDXHvpvHUebLvUt5tdYYv7hACA4mCr2BrWk_rzR0VNgt-9qBNoNyEe_vslJn95ZmHs2Mb9lLXDr7o56_tAAvNFLEC-zNjrPfb8DqKSt1wNPWQNt8e_az6uN0ukAeg3pbGv1lFPmXTtOwGqKNxvFrHwM8iM6SQrDf50QHPT8AeD7WvxgP2FIvnROUSqUXBQLHsMJDMgTqCTd18nKp8k64E63TMIB12DSBtl5W4RvFAq8GpbpOFLoxe716NDu6LNfl6yhzdLiY54hGgJdtOSJMLr9QR5DvUkauTxVKGesP-gvkoNQhn_L0ARPM5D5v0whXNXzvHNGWB3rjGNDHRq8tzBenncyHcZiUidDXgG-GWtberBCpB-_3qrEsgHtzYJl4nmITCWmNI7gCNyexszrhriYNaIJNxCFUBj2Vz2BCT3j7ZUHKrUs08QN9yns3DopEgo3rt33hDk5wdzIeLt_hl7p95cJKmvJlz0m00?></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="CLASS" style="width:846px;height:839px;background:#1B1B1B;" width="846px" height="839px" viewBox="0 0 846 839" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.9beta4?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><rect x="0" y="0" width="846" height="839" fill="#1B1B1B" style="stroke:none;"/><g class="entity" data-qualified-name="customers" id="ent0001" data-source-line="5"><rect x="583.22" y="23.3" width="248.489" height="156.375" fill="#313139" style="stroke:#E7E7E7;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="670.855" y="41.295" fill="#FFF" font-size="14" textLength="73.22">customers</text><line x1="584.22" y1="49.597" x2="830.709" y2="49.597" style="stroke:#E7E7E7;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="63.245" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="66.592" fill="#FFF" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="584.22" y1="73.894" x2="830.709" y2="73.894" style="stroke:#E7E7E7;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="87.542" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="90.889" fill="#FFF" font-size="14" textLength="222.489">document : VARCHAR(18) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="103.839" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="107.186" fill="#FFF" font-size="14" textLength="159.455">name : VARCHAR(200)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="120.136" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="123.483" fill="#FFF" font-size="14" textLength="199.37">email : VARCHAR(255) «UK»</text><text x="603.22" y="139.779" fill="#FFF" font-size="14" textLength="104.467">address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="152.73" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="156.076" fill="#FFF" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="594.22" cy="169.027" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="603.22" y="172.373" fill="#FFF" font-size="14" textLength="192.186">updated_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="drivers" id="ent0002" data-source-line="16"><rect x="7" y="7" width="264.937" height="188.969" fill="#313139" style="stroke:#E7E7E7;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="115.228" y="24.995" fill="#FFF" font-size="14" textLength="48.48">drivers</text><line x1="8" y1="33.297" x2="270.937" y2="33.297" style="stroke:#E7E7E7;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="46.945" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="50.292" fill="#FFF" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="8" y1="57.594" x2="270.937" y2="57.594" style="stroke:#E7E7E7;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="71.242" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="74.589" fill="#FFF" font-size="14" textLength="159.455">name : VARCHAR(200)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="87.539" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="90.886" fill="#FFF" font-size="14" textLength="173.366">cpf : VARCHAR(14) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="103.836" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="107.183" fill="#FFF" font-size="14" textLength="238.937">cnh_number : VARCHAR(11) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="120.133" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="123.479" fill="#FFF" font-size="14" textLength="167.371">cnh_category : CHAR(2)</text><text x="27" y="139.776" fill="#FFF" font-size="14" textLength="154.656">phone : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="152.727" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="156.073" fill="#FFF" font-size="14" textLength="142.693">is_active : BOOLEAN</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="169.023" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="172.37" fill="#FFF" font-size="14" textLength="108.459">hired_at : DATE</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="18" cy="185.32" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="27" y="188.667" fill="#FFF" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="vehicles" id="ent0003" data-source-line="29"><rect x="306.76" y="15.15" width="241.407" height="172.672" fill="#313139" style="stroke:#E7E7E7;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="398.886" y="33.145" fill="#FFF" font-size="14" textLength="57.155">vehicles</text><line x1="307.76" y1="41.447" x2="547.167" y2="41.447" style="stroke:#E7E7E7;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="55.095" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="58.442" fill="#FFF" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="307.76" y1="65.744" x2="547.167" y2="65.744" style="stroke:#E7E7E7;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="79.392" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="82.739" fill="#FFF" font-size="14" textLength="178.404">plate : VARCHAR(8) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="95.689" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="99.036" fill="#FFF" font-size="14" textLength="163.345">model : VARCHAR(100)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="111.986" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="115.333" fill="#FFF" font-size="14" textLength="215.407">manufacturer : VARCHAR(100)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="128.283" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="131.629" fill="#FFF" font-size="14" textLength="114.146">year : SMALLINT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="144.58" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="147.926" fill="#FFF" font-size="14" textLength="195.18">capacity_kg : NUMERIC(8,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="160.877" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="164.223" fill="#FFF" font-size="14" textLength="153.863">status : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="317.76" cy="177.173" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="326.76" y="180.52" fill="#FFF" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="deliveries" id="ent0004" data-source-line="41"><rect x="366.67" y="255.97" width="231.598" height="254.156" fill="#313139" style="stroke:#E7E7E7;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="448.604" y="273.965" fill="#FFF" font-size="14" textLength="67.73">deliveries</text><line x1="367.67" y1="282.267" x2="597.268" y2="282.267" style="stroke:#E7E7E7;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="295.915" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="299.262" fill="#FFF" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="367.67" y1="306.564" x2="597.268" y2="306.564" style="stroke:#E7E7E7;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="320.212" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="323.559" fill="#FFF" font-size="14" textLength="185.869">customer_id : BIGINT «FK»</text><text x="386.67" y="339.856" fill="#FFF" font-size="14" textLength="161.13">driver_id : BIGINT «FK»</text><text x="386.67" y="356.153" fill="#FFF" font-size="14" textLength="169.805">vehicle_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="369.103" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="372.449" fill="#FFF" font-size="14" textLength="151.327">origin_address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="385.4" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="388.746" fill="#FFF" font-size="14" textLength="189.909">destination_address : TEXT</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="401.697" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="405.043" fill="#FFF" font-size="14" textLength="183.278">weight_kg : NUMERIC(8,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="417.993" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="421.34" fill="#FFF" font-size="14" textLength="153.863">status : VARCHAR(20)</text><text x="386.67" y="437.637" fill="#FFF" font-size="14" textLength="205.598">scheduled_at : TIMESTAMPTZ</text><text x="386.67" y="453.934" fill="#FFF" font-size="14" textLength="204.812">picked_up_at : TIMESTAMPTZ</text><text x="386.67" y="470.231" fill="#FFF" font-size="14" textLength="199.404">delivered_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="483.181" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="486.528" fill="#FFF" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="377.67" cy="499.478" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="386.67" y="502.824" fill="#FFF" font-size="14" textLength="192.186">updated_at : TIMESTAMPTZ</text></g><g class="entity" data-qualified-name="invoices" id="ent0005" data-source-line="58"><rect x="421.81" y="570.12" width="289.307" height="254.156" fill="#313139" style="stroke:#E7E7E7;stroke-width:0.5;" rx="2.5" ry="2.5"/><text x="537.91" y="588.115" fill="#FFF" font-size="14" textLength="57.107">invoices</text><line x1="422.81" y1="596.417" x2="710.117" y2="596.417" style="stroke:#E7E7E7;stroke-width:0.5;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="610.065" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="613.412" fill="#FFF" font-size="14" textLength="139.146">id : BIGSERIAL «PK»</text><line x1="422.81" y1="620.714" x2="710.117" y2="620.714" style="stroke:#E7E7E7;stroke-width:1;"/><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="634.362" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="637.709" fill="#FFF" font-size="14" textLength="176.162">delivery_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="650.659" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="654.006" fill="#FFF" font-size="14" textLength="185.869">customer_id : BIGINT «FK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="666.956" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="670.303" fill="#FFF" font-size="14" textLength="263.307">invoice_number : VARCHAR(20) «UK»</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="683.253" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="686.599" fill="#FFF" font-size="14" textLength="114.516">series : CHAR(3)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="699.55" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="702.896" fill="#FFF" font-size="14" textLength="198.242">total_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="715.847" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="719.193" fill="#FFF" font-size="14" textLength="188.583">tax_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="732.143" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="735.49" fill="#FFF" font-size="14" textLength="189.205">net_value : NUMERIC(12,2)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="748.44" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="751.787" fill="#FFF" font-size="14" textLength="153.863">status : VARCHAR(20)</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="764.737" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="768.084" fill="#FFF" font-size="14" textLength="178.821">issued_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="781.034" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="784.381" fill="#FFF" font-size="14" textLength="116.313">due_date : DATE</text><text x="441.81" y="800.678" fill="#FFF" font-size="14" textLength="164.213">paid_at : TIMESTAMPTZ</text><g data-visibility-modifier="IE_MANDATORY"><ellipse cx="432.81" cy="813.628" rx="3" ry="3" fill="#000" style="stroke:#000;stroke-width:1;"/></g><text x="441.81" y="816.974" fill="#FFF" font-size="14" textLength="187.605">created_at : TIMESTAMPTZ</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0004" id="lnk6" data-source-line="75" data-link-type="crowfoot"><path d="M590.75,187.91 C590.75,211.43 590.75,211.85 590.75,237.66" style="stroke:#E7E7E7;stroke-width:1;" fill="none" id="customers-deliveries" codeLine="75"/><line x1="586.75" y1="183.91" x2="594.75" y2="183.91" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="586.75" y1="186.91" x2="594.75" y2="186.91" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="590.75" y1="187.91" x2="590.75" y2="179.91" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="596.75" y2="255.66" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="584.75" y2="255.66" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="590.75" y1="247.66" x2="590.75" y2="255.66" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="590.75" cy="241.66" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><text x="457.75" y="213.857" fill="#FFF" font-size="13" textLength="132.412">contrata (RESTRICT)</text></g><g class="link" data-entity-1="ent0002" data-entity-2="ent0004" id="lnk7" data-source-line="76" data-link-type="crowfoot"><path d="M287.37,192.28 C362.75,192.28 427.17,192.28 427.17,192.28 C427.17,192.28 427.17,202.67 427.17,237.54" style="stroke:#E7E7E7;stroke-width:1;" fill="none" id="drivers-deliveries" codeLine="76"/><line x1="283.37" y1="192.28" x2="272.37" y2="192.28" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="283.37" cy="192.28" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="276.37" y1="196.28" x2="276.37" y2="188.28" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="433.17" y2="255.54" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="421.17" y2="255.54" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="427.17" y1="247.54" x2="427.17" y2="255.54" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="427.17" cy="241.54" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><text x="319.9" y="205.347" fill="#FFF" font-size="13" textLength="123.195">conduz (SET NULL)</text></g><g class="link" data-entity-1="ent0003" data-entity-2="ent0004" id="lnk8" data-source-line="77" data-link-type="crowfoot"><path d="M487.67,203.26 C487.67,224.59 487.67,214.87 487.67,237.67" style="stroke:#E7E7E7;stroke-width:1;" fill="none" id="vehicles-deliveries" codeLine="77"/><line x1="487.67" y1="199.26" x2="487.67" y2="188.26" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="487.67" cy="199.26" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="483.67" y1="192.26" x2="491.67" y2="192.26" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="493.67" y2="255.67" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="481.67" y2="255.67" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="487.67" y1="247.67" x2="487.67" y2="255.67" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="487.67" cy="241.67" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><text x="342.67" y="235.027" fill="#FFF" font-size="13" textLength="144.574">transporta (SET NULL)</text></g><g class="link" data-entity-1="ent0004" data-entity-2="ent0005" id="lnk9" data-source-line="78" data-link-type="crowfoot"><path d="M510.04,518.37 C510.04,537.93 510.04,532.13 510.04,551.69" style="stroke:#E7E7E7;stroke-width:1;" fill="none" id="deliveries-invoices" codeLine="78"/><line x1="506.04" y1="514.37" x2="514.04" y2="514.37" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="506.04" y1="517.37" x2="514.04" y2="517.37" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="510.04" y1="518.37" x2="510.04" y2="510.37" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="516.04" y2="569.69" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="504.04" y2="569.69" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="510.04" y1="561.69" x2="510.04" y2="569.69" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="510.04" cy="555.69" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><text x="402.04" y="536.097" fill="#FFF" font-size="13" textLength="107.161">gera (RESTRICT)</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0005" id="lnk10" data-source-line="79" data-link-type="crowfoot"><path d="M654.69,187.98 C654.69,287.26 654.69,433.52 654.69,551.76" style="stroke:#E7E7E7;stroke-width:1;" fill="none" id="customers-invoices" codeLine="79"/><line x1="650.69" y1="183.98" x2="658.69" y2="183.98" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="650.69" y1="186.98" x2="658.69" y2="186.98" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="654.69" y1="187.98" x2="654.69" y2="179.98" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="660.69" y2="569.76" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="648.69" y2="569.76" style="stroke:#E7E7E7;stroke-width:1;"/><line x1="654.69" y1="561.76" x2="654.69" y2="569.76" style="stroke:#E7E7E7;stroke-width:1;"/><ellipse cx="654.69" cy="555.76" rx="4" ry="4" fill="none" style="stroke:#E7E7E7;stroke-width:1;"/><text x="655.69" y="370.937" fill="#FFF" font-size="13" textLength="145.126">é faturado (RESTRICT)</text></g><?plantuml-src fLNRRjf047tdAxPv8gZ48Msa24MHt9IsA914u5HLNwp9xe9NsBlMNaXeqW_gT_J7Ec0xB8f1H7tp-ipid3bpsNT2qjGnJX9hSzCD0WqFHrDX4tVl3DTKISkbFQ8g2uPYbe18hpJCkJL1DcEAcZXtMHfaO2pNWKrunat0-0HSQWC6UdQqn1k9m0XKQ9hoXfa9cOE6ZAH2Shl8EL7Q9ghHm432BiW1TSQgZ6jpGC2GbnDvQX3I8eAHBldK_phkZVhXW9oVtrvTN23IRgzW9EKol0cDleUZos_XgDavEqIpkyAiHIHat4DFZeyFL_zvXjdvmEcfvmUCQMuCub7lHxHoe9g3vIo6PR2eF-oDet1u6_rSWIvdzU3lTQ9CYtcLPlczNvBRKg3vnC_xuqRUL2QnTDazrxvDvvKDHTvJfHTeLTo-l3jFbDmCMKGK9WPgaVgIxytDe1TUh_udGbV9VmwZtcwzF4dcF17O9OKcrM4_KV8KR_SeRbOzKupxrUrKccKWtGHpS7fJc0fVS5Z-7m_3mQ1_NLOUSg38DvvD4Rg-6oAZo-RP-vF2nLYmpjIejOy2I7FP2QBKO7tSJuLgNEBA3ZcZqPV2gEYoUgnKknviuP2AgP1npHmmRgoGO8MgXH-uc2RsRL8Pcd3cqlhXoWMT8UBoEh3KQzjO_lVC2ZbNWfR5gGvxhgQ2scARmhjBrwgYlHvYrCnlTLEqIpc-7mgXhRAGndD87VVgq3cf2c7XSGUAYte7khNVXJ5kczZCyPWL4rjkY1p4Mwk6XLc_3y_FxRPwyYUcYuy9lc0QB93c2BsGTtHuqAYMBI7Fgjw7kL-aEUv5cErWW1ulgwZU0qD8a-Cx1XjUdb59xgLZq6dAzIQjLwdurd__a0dAh84ft-aV?></g></svg></div></div>
+
+<hr />
 <h3 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Docker instalado (<code>docker --version</code>)</li>
@@ -1486,138 +2068,55 @@
 </span><span id="__span-2-220"><a id="__codelineno-2-220" name="__codelineno-2-220" href="#__codelineno-2-220"></a><span class="w">    </span><span class="k">FOR</span><span class="w"> </span><span class="k">EACH</span><span class="w"> </span><span class="k">ROW</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="k">FUNCTION</span><span class="w"> </span><span class="n">update_updated_at_column</span><span class="p">();</span>
 </span></code></pre></div>
 <hr />
-<h2 id="diagrama-entidade-relacionamento-plantuml">Diagrama Entidade-Relacionamento (PlantUML)<a class="headerlink" href="#diagrama-entidade-relacionamento-plantuml" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>@startuml swifttrack_core
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>hide circle
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>skinparam linetype ortho
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>entity &quot;customers&quot; as customers {
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  * id : BIGSERIAL &lt;&lt;PK&gt;&gt;
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  --
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  * document : VARCHAR(18) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  * name : VARCHAR(200)
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  * email : VARCHAR(255) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  address : TEXT
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  * created_at : TIMESTAMPTZ
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  * updated_at : TIMESTAMPTZ
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>}
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>entity &quot;drivers&quot; as drivers {
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  * id : BIGSERIAL &lt;&lt;PK&gt;&gt;
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  --
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  * name : VARCHAR(200)
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  * cpf : VARCHAR(14) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  * cnh_number : VARCHAR(11) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  * cnh_category : CHAR(2)
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>  phone : VARCHAR(20)
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>  * is_active : BOOLEAN
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  * hired_at : DATE
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>  * created_at : TIMESTAMPTZ
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>}
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>entity &quot;vehicles&quot; as vehicles {
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>  * id : BIGSERIAL &lt;&lt;PK&gt;&gt;
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>  --
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>  * plate : VARCHAR(8) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>  * model : VARCHAR(100)
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>  * manufacturer : VARCHAR(100)
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>  * year : SMALLINT
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>  * capacity_kg : NUMERIC(8,2)
-</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>  * status : VARCHAR(20)
-</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>  * created_at : TIMESTAMPTZ
-</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>}
-</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
-</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>entity &quot;deliveries&quot; as deliveries {
-</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>  * id : BIGSERIAL &lt;&lt;PK&gt;&gt;
-</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>  --
-</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>  * customer_id : BIGINT &lt;&lt;FK&gt;&gt;
-</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>  driver_id : BIGINT &lt;&lt;FK&gt;&gt;
-</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>  vehicle_id : BIGINT &lt;&lt;FK&gt;&gt;
-</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>  * origin_address : TEXT
-</span><span id="__span-3-48"><a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>  * destination_address : TEXT
-</span><span id="__span-3-49"><a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>  * weight_kg : NUMERIC(8,2)
-</span><span id="__span-3-50"><a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>  * status : VARCHAR(20)
-</span><span id="__span-3-51"><a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>  scheduled_at : TIMESTAMPTZ
-</span><span id="__span-3-52"><a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>  picked_up_at : TIMESTAMPTZ
-</span><span id="__span-3-53"><a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a>  delivered_at : TIMESTAMPTZ
-</span><span id="__span-3-54"><a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a>  * created_at : TIMESTAMPTZ
-</span><span id="__span-3-55"><a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a>  * updated_at : TIMESTAMPTZ
-</span><span id="__span-3-56"><a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a>}
-</span><span id="__span-3-57"><a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a>
-</span><span id="__span-3-58"><a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a>entity &quot;invoices&quot; as invoices {
-</span><span id="__span-3-59"><a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a>  * id : BIGSERIAL &lt;&lt;PK&gt;&gt;
-</span><span id="__span-3-60"><a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a>  --
-</span><span id="__span-3-61"><a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>  * delivery_id : BIGINT &lt;&lt;FK&gt;&gt;
-</span><span id="__span-3-62"><a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a>  * customer_id : BIGINT &lt;&lt;FK&gt;&gt;
-</span><span id="__span-3-63"><a id="__codelineno-3-63" name="__codelineno-3-63" href="#__codelineno-3-63"></a>  * invoice_number : VARCHAR(20) &lt;&lt;UK&gt;&gt;
-</span><span id="__span-3-64"><a id="__codelineno-3-64" name="__codelineno-3-64" href="#__codelineno-3-64"></a>  * series : CHAR(3)
-</span><span id="__span-3-65"><a id="__codelineno-3-65" name="__codelineno-3-65" href="#__codelineno-3-65"></a>  * total_value : NUMERIC(12,2)
-</span><span id="__span-3-66"><a id="__codelineno-3-66" name="__codelineno-3-66" href="#__codelineno-3-66"></a>  * tax_value : NUMERIC(12,2)
-</span><span id="__span-3-67"><a id="__codelineno-3-67" name="__codelineno-3-67" href="#__codelineno-3-67"></a>  * net_value : NUMERIC(12,2)
-</span><span id="__span-3-68"><a id="__codelineno-3-68" name="__codelineno-3-68" href="#__codelineno-3-68"></a>  * status : VARCHAR(20)
-</span><span id="__span-3-69"><a id="__codelineno-3-69" name="__codelineno-3-69" href="#__codelineno-3-69"></a>  * issued_at : TIMESTAMPTZ
-</span><span id="__span-3-70"><a id="__codelineno-3-70" name="__codelineno-3-70" href="#__codelineno-3-70"></a>  * due_date : DATE
-</span><span id="__span-3-71"><a id="__codelineno-3-71" name="__codelineno-3-71" href="#__codelineno-3-71"></a>  paid_at : TIMESTAMPTZ
-</span><span id="__span-3-72"><a id="__codelineno-3-72" name="__codelineno-3-72" href="#__codelineno-3-72"></a>  * created_at : TIMESTAMPTZ
-</span><span id="__span-3-73"><a id="__codelineno-3-73" name="__codelineno-3-73" href="#__codelineno-3-73"></a>}
-</span><span id="__span-3-74"><a id="__codelineno-3-74" name="__codelineno-3-74" href="#__codelineno-3-74"></a>
-</span><span id="__span-3-75"><a id="__codelineno-3-75" name="__codelineno-3-75" href="#__codelineno-3-75"></a>customers ||--o{ deliveries : &quot;contrata (RESTRICT)&quot;
-</span><span id="__span-3-76"><a id="__codelineno-3-76" name="__codelineno-3-76" href="#__codelineno-3-76"></a>drivers   |o--o{ deliveries : &quot;conduz (SET NULL)&quot;
-</span><span id="__span-3-77"><a id="__codelineno-3-77" name="__codelineno-3-77" href="#__codelineno-3-77"></a>vehicles  |o--o{ deliveries : &quot;transporta (SET NULL)&quot;
-</span><span id="__span-3-78"><a id="__codelineno-3-78" name="__codelineno-3-78" href="#__codelineno-3-78"></a>deliveries ||--o{ invoices : &quot;gera (RESTRICT)&quot;
-</span><span id="__span-3-79"><a id="__codelineno-3-79" name="__codelineno-3-79" href="#__codelineno-3-79"></a>customers ||--o{ invoices : &quot;é faturado (RESTRICT)&quot;
-</span><span id="__span-3-80"><a id="__codelineno-3-80" name="__codelineno-3-80" href="#__codelineno-3-80"></a>@enduml
-</span></code></pre></div>
-<hr />
 <h2 id="queries-de-validacao-para-o-aluno-testar-as-constraints">Queries de Validação (Para o Aluno Testar as Constraints)<a class="headerlink" href="#queries-de-validacao-para-o-aluno-testar-as-constraints" title="Permanent link">&para;</a></h2>
 <p>Depois de rodar o script acima, o aluno pode testar se as constraints estão funcionando. <strong>Todas as queries abaixo DEVEM falhar</strong> com erro de constraint:</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Deve falhar: valor negativo na fatura</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">invoices</span><span class="w"> </span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">(</span><span class="n">delivery_id</span><span class="p">,</span><span class="w"> </span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">invoice_number</span><span class="p">,</span><span class="w"> </span><span class="n">total_value</span><span class="p">,</span><span class="w"> </span><span class="n">net_value</span><span class="p">,</span><span class="w"> </span><span class="n">due_date</span><span class="p">)</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;NF001&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2026-10-10&#39;</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">-- ERRO: new row for relation &quot;invoices&quot; violates check constraint &quot;chk_invoices_total_value&quot;</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">-- Deve falhar: status inválido em entrega</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">origin_address</span><span class="p">,</span><span class="w"> </span><span class="n">destination_address</span><span class="p">,</span><span class="w"> </span><span class="n">weight_kg</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;RJ&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;FINISHED&#39;</span><span class="p">);</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1">-- ERRO: new row for relation &quot;deliveries&quot; violates check constraint &quot;chk_deliveries_status&quot;</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1">-- Deve falhar: placa de veículo com formato inválido</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">vehicles</span><span class="w"> </span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="p">(</span><span class="n">plate</span><span class="p">,</span><span class="w"> </span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">manufacturer</span><span class="p">,</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="n">capacity_kg</span><span class="p">)</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;123-ABCD&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Truck&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Volvo&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2020</span><span class="p">,</span><span class="w"> </span><span class="mi">10000</span><span class="p">);</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c1">-- ERRO: new row for relation &quot;vehicles&quot; violates check constraint &quot;chk_vehicles_plate_format&quot;</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c1">-- Deve falhar: categoria de CNH inválida</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">drivers</span><span class="w"> </span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">cpf</span><span class="p">,</span><span class="w"> </span><span class="n">cnh_number</span><span class="p">,</span><span class="w"> </span><span class="n">cnh_category</span><span class="p">,</span><span class="w"> </span><span class="n">hired_at</span><span class="p">)</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;João&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;123.456.789-00&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;12345678900&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">);</span>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="c1">-- ERRO: new row for relation &quot;drivers&quot; violates check constraint &quot;chk_drivers_cnh_category&quot;</span>
-</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
-</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="c1">-- Deve falhar: delivered_at preenchido mas status não é DELIVERED</span>
-</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
-</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">    </span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">origin_address</span><span class="p">,</span><span class="w"> </span><span class="n">destination_address</span><span class="p">,</span><span class="w"> </span><span class="n">weight_kg</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">delivered_at</span><span class="p">)</span>
-</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;RJ&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">NOW</span><span class="p">());</span>
-</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="c1">-- ERRO: violates check constraint &quot;chk_deliveries_delivered_at&quot;</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Deve falhar: valor negativo na fatura</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">invoices</span><span class="w"> </span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">(</span><span class="n">delivery_id</span><span class="p">,</span><span class="w"> </span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">invoice_number</span><span class="p">,</span><span class="w"> </span><span class="n">total_value</span><span class="p">,</span><span class="w"> </span><span class="n">net_value</span><span class="p">,</span><span class="w"> </span><span class="n">due_date</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;NF001&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2026-10-10&#39;</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">-- ERRO: new row for relation &quot;invoices&quot; violates check constraint &quot;chk_invoices_total_value&quot;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">-- Deve falhar: status inválido em entrega</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">origin_address</span><span class="p">,</span><span class="w"> </span><span class="n">destination_address</span><span class="p">,</span><span class="w"> </span><span class="n">weight_kg</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;RJ&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;FINISHED&#39;</span><span class="p">);</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1">-- ERRO: new row for relation &quot;deliveries&quot; violates check constraint &quot;chk_deliveries_status&quot;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1">-- Deve falhar: placa de veículo com formato inválido</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">vehicles</span><span class="w"> </span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="p">(</span><span class="n">plate</span><span class="p">,</span><span class="w"> </span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">manufacturer</span><span class="p">,</span><span class="w"> </span><span class="k">year</span><span class="p">,</span><span class="w"> </span><span class="n">capacity_kg</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;123-ABCD&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Truck&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Volvo&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2020</span><span class="p">,</span><span class="w"> </span><span class="mi">10000</span><span class="p">);</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1">-- ERRO: new row for relation &quot;vehicles&quot; violates check constraint &quot;chk_vehicles_plate_format&quot;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1">-- Deve falhar: categoria de CNH inválida</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">drivers</span><span class="w"> </span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">cpf</span><span class="p">,</span><span class="w"> </span><span class="n">cnh_number</span><span class="p">,</span><span class="w"> </span><span class="n">cnh_category</span><span class="p">,</span><span class="w"> </span><span class="n">hired_at</span><span class="p">)</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;João&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;123.456.789-00&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;12345678900&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">);</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="c1">-- ERRO: new row for relation &quot;drivers&quot; violates check constraint &quot;chk_drivers_cnh_category&quot;</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="c1">-- Deve falhar: delivered_at preenchido mas status não é DELIVERED</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span><span class="w"> </span><span class="n">origin_address</span><span class="p">,</span><span class="w"> </span><span class="n">destination_address</span><span class="p">,</span><span class="w"> </span><span class="n">weight_kg</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">delivered_at</span><span class="p">)</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;RJ&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">NOW</span><span class="p">());</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="c1">-- ERRO: violates check constraint &quot;chk_deliveries_delivered_at&quot;</span>
 </span></code></pre></div>
 <hr />
 <h2 id="verificando-os-indices-criados">Verificando os Índices Criados<a class="headerlink" href="#verificando-os-indices-criados" title="Permanent link">&para;</a></h2>
 <p>Para confirmar que os índices B-Tree foram criados, o aluno pode rodar:</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Lista todos os índices do schema swifttrack_core</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">SELECT</span><span class="w"> </span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">tablename</span><span class="p">,</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">indexname</span><span class="p">,</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">indexdef</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">FROM</span><span class="w"> </span><span class="n">pg_indexes</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">schemaname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;swifttrack_core&#39;</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">tablename</span><span class="p">,</span><span class="w"> </span><span class="n">indexname</span><span class="p">;</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Lista todos os índices do schema swifttrack_core</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">SELECT</span><span class="w"> </span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">tablename</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="n">indexname</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">indexdef</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">FROM</span><span class="w"> </span><span class="n">pg_indexes</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">schemaname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;swifttrack_core&#39;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">tablename</span><span class="p">,</span><span class="w"> </span><span class="n">indexname</span><span class="p">;</span>
 </span></code></pre></div>
 <p>Ou para ver o <strong>plano de execução</strong> de uma query (mostrando se o índice está sendo usado):</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">ANALYZE</span><span class="w"> </span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1">-- O plano pode usar o índice ou uma varredura sequencial, conforme o volume e a distribuição dos dados.</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">ANALYZE</span><span class="w"> </span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="n">deliveries</span><span class="w"> </span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">-- O plano pode usar o índice ou uma varredura sequencial, conforme o volume e a distribuição dos dados.</span>
 </span></code></pre></div>
 <hr />
 <h2 id="pontos-de-discussao-para-a-aula">Pontos de Discussão para a Aula<a class="headerlink" href="#pontos-de-discussao-para-a-aula" title="Permanent link">&para;</a></h2>
@@ -1645,8 +2144,8 @@
 <hr />
 <h2 id="opcao-1-pipe-direto-mais-rapida-recomendada">Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)<a class="headerlink" href="#opcao-1-pipe-direto-mais-rapida-recomendada" title="Permanent link">&para;</a></h2>
 <p>Essa é a forma mais elegante: você "alimenta" o <code>psql</code> dentro do container com o conteúdo do seu arquivo local, sem precisar copiar nada.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Execute este comando no terminal, na pasta onde está o arquivo 01_schema.sql</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Execute este comando no terminal, na pasta onde está o arquivo 01_schema.sql</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
 </span></code></pre></div>
 <h3 id="explicando-o-comando">Explicando o comando:<a class="headerlink" href="#explicando-o-comando" title="Permanent link">&para;</a></h3>
 <table>
@@ -1676,59 +2175,59 @@
 </tbody>
 </table>
 <h3 id="saida-esperada-sucesso">Saída esperada (sucesso):<a class="headerlink" href="#saida-esperada-sucesso" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>CREATE SCHEMA
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>CREATE TABLE
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>COMMENT
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>CREATE TABLE
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>...
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>CREATE INDEX
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>CREATE FUNCTION
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>CREATE TRIGGER
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>CREATE SCHEMA
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>CREATE TABLE
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>COMMENT
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>CREATE TABLE
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>...
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>CREATE INDEX
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>CREATE FUNCTION
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>CREATE TRIGGER
 </span></code></pre></div>
 <hr />
 <h2 id="opcao-2-copiar-o-arquivo-para-o-container-mais-robusta">Opção 2: Copiar o arquivo para o container (MAIS ROBUSTA)<a class="headerlink" href="#opcao-2-copiar-o-arquivo-para-o-container-mais-robusta" title="Permanent link">&para;</a></h2>
 <p>Se o arquivo for grande ou você quiser inspecioná-lo dentro do container depois:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 1. Copia o arquivo para dentro do container</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker<span class="w"> </span>cp<span class="w"> </span>01_schema.sql<span class="w"> </span>swifttrack-pg:/tmp/01_schema.sql
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># 2. Executa o SQL dentro do container</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>/tmp/01_schema.sql
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># 3. (Opcional) Remove o arquivo temporário</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>rm<span class="w"> </span>/tmp/01_schema.sql
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 1. Copia o arquivo para dentro do container</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>docker<span class="w"> </span>cp<span class="w"> </span>01_schema.sql<span class="w"> </span>swifttrack-pg:/tmp/01_schema.sql
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 2. Executa o SQL dentro do container</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>/tmp/01_schema.sql
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># 3. (Opcional) Remove o arquivo temporário</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>rm<span class="w"> </span>/tmp/01_schema.sql
 </span></code></pre></div>
 <p><strong>Vantagem:</strong> Se der erro no meio, você pode entrar no container e editar o arquivo sem precisar reenviar.</p>
 <hr />
 <h2 id="opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina">Opção 3: Usar <code>psql</code> local (se tiver instalado na sua máquina)<a class="headerlink" href="#opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina" title="Permanent link">&para;</a></h2>
 <p>Como a porta <code>5432</code> foi exposta no <code>docker run</code>, você pode conectar <strong>diretamente da sua máquina</strong>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># No Linux/Mac:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>01_schema.sql
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># A senha é: secret</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># No Linux/Mac:</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>01_schema.sql
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># A senha é: secret</span>
 </span></code></pre></div>
 <p>Ou, se quiser evitar digitar a senha toda hora:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">PGPASSWORD</span><span class="o">=</span>secret<span class="w"> </span>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>01_schema.sql
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">PGPASSWORD</span><span class="o">=</span>secret<span class="w"> </span>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>01_schema.sql
 </span></code></pre></div></p>
 <p>** Limitação:** Requer ter o <code>psql</code> instalado na máquina host.</p>
 <hr />
 <h2 id="validando-que-funcionou">Validando que Funcionou<a class="headerlink" href="#validando-que-funcionou" title="Permanent link">&para;</a></h2>
 <p>Depois de executar qualquer uma das opções acima, confirme que o schema foi criado:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Entra no container interativamente</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Entra no container interativamente</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
 </span></code></pre></div>
 <p>Dentro do <code>psql</code>, rode:</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- Lista as tabelas criadas</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="err">\</span><span class="n">dt</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="o">*</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1">-- Lista os índices</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="err">\</span><span class="n">di</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="o">*</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1">-- Conta as tabelas (deve retornar 5)</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;swifttrack_core&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;BASE TABLE&#39;</span><span class="p">;</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1">-- Sai do psql</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="err">\</span><span class="n">q</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- Lista as tabelas criadas</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="err">\</span><span class="n">dt</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="o">*</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1">-- Lista os índices</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="err">\</span><span class="n">di</span><span class="w"> </span><span class="n">swifttrack_core</span><span class="p">.</span><span class="o">*</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1">-- Conta as tabelas (deve retornar 5)</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;swifttrack_core&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;BASE TABLE&#39;</span><span class="p">;</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1">-- Sai do psql</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="err">\</span><span class="n">q</span>
 </span></code></pre></div>
 <hr />
 <h2 id="problemas-comuns-e-solucoes">Problemas Comuns e Soluções<a class="headerlink" href="#problemas-comuns-e-solucoes" title="Permanent link">&para;</a></h2>
@@ -1738,11 +2237,11 @@
 <h3 id="erro-psql-fatal-database-swifttrack_core-does-not-exist">Erro: <code>psql: FATAL: database "swifttrack_core" does not exist</code><a class="headerlink" href="#erro-psql-fatal-database-swifttrack_core-does-not-exist" title="Permanent link">&para;</a></h3>
 <p><strong>Causa:</strong> O container foi criado sem a variável <code>POSTGRES_DB</code>.
 <strong>Solução:</strong> Reconstrua o container:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>swifttrack-pg
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>swifttrack-pg<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">POSTGRES_DB</span><span class="o">=</span>swifttrack_core<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">5432</span>:5432<span class="w"> </span>-d<span class="w"> </span>postgres:16
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>swifttrack-pg
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>swifttrack-pg<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">POSTGRES_DB</span><span class="o">=</span>swifttrack_core<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">5432</span>:5432<span class="w"> </span>-d<span class="w"> </span>postgres:16
 </span></code></pre></div></p>
 <h3 id="erro-could-not-find-file-tmp01_schemasql">Erro: <code>could not find file "/tmp/01_schema.sql"</code><a class="headerlink" href="#erro-could-not-find-file-tmp01_schemasql" title="Permanent link">&para;</a></h3>
 <p><strong>Causa:</strong> Esqueceu o <code>docker cp</code> antes.
@@ -1753,21 +2252,21 @@
 <hr />
 <h2 id="dica-bonus-script-de-reset-total">Dica Bônus: Script de "Reset Total"<a class="headerlink" href="#dica-bonus-script-de-reset-total" title="Permanent link">&para;</a></h2>
 <p>Se você quiser <strong>recriar o schema do zero</strong> (útil durante os testes da aula), crie um arquivo <code>reset.sh</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="ch">#!/bin/bash</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># Reseta o banco e reaplica o schema</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;DROP SCHEMA IF EXISTS swifttrack_core CASCADE;&quot;</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Schema recriado com sucesso!&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># Reseta o banco e reaplica o schema</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;DROP SCHEMA IF EXISTS swifttrack_core CASCADE;&quot;</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Schema recriado com sucesso!&quot;</span>
 </span></code></pre></div>
 <p>Depois é só rodar:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>reset.sh
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>./reset.sh
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>reset.sh
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>./reset.sh
 </span></code></pre></div></p>
 <hr />
 <h2 id="resumo-pratico">Resumo Prático<a class="headerlink" href="#resumo-pratico" title="Permanent link">&para;</a></h2>
 <p>Para a aula, a <strong>Opção 1</strong> é a mais didática e rápida:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
 </span></code></pre></div>
 
 
@@ -1834,6 +2333,12 @@
     
     
       <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../../../../assets/mkdocs_puml/interaction.js"></script>
       
     
   </body>
