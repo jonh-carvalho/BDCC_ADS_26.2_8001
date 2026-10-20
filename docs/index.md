@@ -31,6 +31,10 @@ hide:
         <h2 class="bdcc-card__title">Entrega das atividades</h2>
         <p class="bdcc-note">
           As APs deverão ser enviadas no GitHub e ACs em Formulários.
+          <a href="https://github.com/Projetos-de-Extensao/PC_CDIA_26.2_8001_I">Bernardo</a>,
+          <a href="https://github.com/Projetos-de-Extensao/PC_CDIA_26.2_8001_II">Caio</a>,
+          <a href="https://github.com/Projetos-de-Extensao/PC_CDIA_26.2_8001_III">Eric</a> e
+          <a href="https://github.com/Projetos-de-Extensao/PC_CDIA_26.2_8001_III">Keanu</a> 
         </p>
         <div class="bdcc-accent-line" aria-hidden="true"></div>
       </section>
