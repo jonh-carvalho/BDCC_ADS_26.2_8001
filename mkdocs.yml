@@ -22,8 +22,10 @@ nav:
 #        - 12 - EB MySQL: Disciplina/roteiros/12 - ebmysql.md
         - Big Data: 
           - 11 - Transacional: Disciplina/roteiros/bigdata/aula01/aula01 - 01.md
-          - 11 - Analítico: Disciplina/roteiros/bigdata/aula01/aula01 - 02_transaction.md
-          - 11 - Data Lake: Disciplina/roteiros/bigdata/aula01/aula01 - 03_seed.md
+          - 12 - Analítico: Disciplina/roteiros/bigdata/aula01/aula01 - 02_transaction.md
+          - 12 - Data Lake: Disciplina/roteiros/bigdata/aula01/aula01 - 03_seed.md
+          - 13 - Document: Disciplina/roteiros/bigdata/aula02/aula02_01.md
+          - 13 - Setup: Disciplina/roteiros/bigdata/aula02/aula02_03_1.md
   - Avaliações:
       - AC:
         - Index: Avalia/index.md
