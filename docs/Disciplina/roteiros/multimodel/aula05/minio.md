@@ -23,14 +23,13 @@ Execute: `mkdir -p ~/minio/data`
 Execute o comando Docker abaixo ajustando as variáveis de usuário e senha (`MINIO_ROOT_USER` e `MINIO_ROOT_PASSWORD`):
 
 ```bash
-docker run -d \
-  --name minio \
-  --restart always \
-  -p 9000:9000 \
-  -p 9001:9001 \
-  -v ~/minio/data:/data \
-  -e "MINIO_ROOT_USER=admin" \
-  -e "MINIO_ROOT_PASSWORD=SuaSenhaSegura123" \
+docker run -d --name minio
+  --restart always 
+  -p 9000:9000 
+  -p 9001:9001 
+  -v ~/minio/data:/data 
+  -e "MINIO_ROOT_USER=admin" 
+  -e "MINIO_ROOT_PASSWORD=SuaSenhaSegura123" 
   quay.io/minio/minio server /data --console-address ":9001"
 
 ```
