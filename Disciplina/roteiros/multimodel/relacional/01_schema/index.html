@@ -11,6 +11,10 @@
       
       
       
+        <link rel="prev" href="../../../10%20-%20docker_rds/">
+      
+      
+        <link rel="next" href="../02_transaction/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Aula01 01 - BDCC_ADS_26.2_8001</title>
+        <title>11 - Transacional - BDCC_ADS_26.2_8001</title>
       
     
     
@@ -111,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aula01   01
+              11 - Transacional
             
           </span>
         </div>
@@ -256,10 +260,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../../../aulas/" class="md-tabs__link">
           
   
@@ -402,8 +408,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -415,17 +423,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -443,7 +454,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -486,8 +497,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -518,11 +531,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -543,7 +556,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -810,8 +823,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -832,11 +847,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_10" id="__nav_2_2_10_label" tabindex="0">
@@ -857,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -872,10 +887,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../bigdata/aula01/aula01 - 01.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 - Transacional
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -891,6 +931,301 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#schema-ddl-completo-swifttrack-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema DDL Completo — SwiftTrack Core
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema DDL Completo — SwiftTrack Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pré-requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-do-postgresql-16-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup do PostgreSQL 16 (Docker)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisoes-de-design-antes-do-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisões de Design (Antes do Código)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script-sql-completo-01_schemasql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Script SQL Completo (01_schema.sql)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queries-de-validacao-para-o-aluno-testar-as-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queries de Validação (Para o Aluno Testar as Constraints)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificando-os-indices-criados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verificando os Índices Criados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos-de-discussao-para-a-aula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pontos de Discussão para a Aula
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicando-o-01_schemasql-no-docker-sem-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicando o 01_schema.sql no Docker (sem docker-compose)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicando o 01_schema.sql no Docker (sem docker-compose)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcao-1-pipe-direto-mais-rapida-recomendada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicando-o-comando" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explicando o comando:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saida-esperada-sucesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saída esperada (sucesso):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcao-2-copiar-o-arquivo-para-o-container-mais-robusta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 2: Copiar o arquivo para o container (MAIS ROBUSTA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opção 3: Usar psql local (se tiver instalado na sua máquina)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validando-que-funcionou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validando que Funcionou
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-comuns-e-solucoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemas Comuns e Soluções
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemas Comuns e Soluções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erro-docker-exec-requires-at-least-2-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: docker: "exec" requires at least 2 arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-psql-fatal-database-swifttrack_core-does-not-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: psql: FATAL: database "swifttrack_core" does not exist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-could-not-find-file-tmp01_schemasql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: could not find file "/tmp/01_schema.sql"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-permission-denied-no-arquivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro: permission denied no arquivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dica-bonus-script-de-reset-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dica Bônus: Script de "Reset Total"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo-pratico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo Prático
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -903,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../bigdata/aula01/aula01 - 02_transaction.md" class="md-nav__link">
+      <a href="../02_transaction/" class="md-nav__link">
         
   
   
@@ -931,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../bigdata/aula01/aula01 - 03_seed.md" class="md-nav__link">
+      <a href="../03_seed/" class="md-nav__link">
         
   
   
@@ -959,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../bigdata/aula02/aula02_01.md" class="md-nav__link">
+      <a href="../aula02_01.md" class="md-nav__link">
         
   
   
@@ -987,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../bigdata/aula02/aula02_03_1.md" class="md-nav__link">
+      <a href="../aula02_03_1.md" class="md-nav__link">
         
   
   
@@ -1451,6 +1786,82 @@
 
   
 
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../../../aulas/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Disciplina
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../../04%20-%20aws/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Roteiro
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Big Data
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
 
               
               <article class="md-content__inner md-typeset">
