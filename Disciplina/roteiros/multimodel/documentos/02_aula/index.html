@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plano-de-aula-modulo-1-semana-2" class="md-skip">
+        <a href="#tema-o-paradigma-documento-catalogos-flexiveis" class="md-skip">
           Skip to content
         </a>
       
@@ -1492,13 +1492,9 @@
   
 
 
-<p>-- Active: 1792551606560@@127.0.0.1@5432</p>
-<h1 id="plano-de-aula-modulo-1-semana-2">Plano de Aula: Módulo 1 — Semana 2<a class="headerlink" href="#plano-de-aula-modulo-1-semana-2" title="Permanent link">&para;</a></h1>
+  <h1>02 aula</h1>
+
 <h2 id="tema-o-paradigma-documento-catalogos-flexiveis">Tema: O Paradigma Documento — Catálogos Flexíveis<a class="headerlink" href="#tema-o-paradigma-documento-catalogos-flexiveis" title="Permanent link">&para;</a></h2>
-<p><strong>Duração Total:</strong> 4 horas (1h Teoria + 3h Prática)
-<strong>Público-alvo:</strong> Engenheiros de Dados, Desenvolvedores Backend, Arquitetos de Software.
-<strong>Pré-requisitos:</strong> PostgreSQL 16 rodando (configurado na Semana 1) e conhecimento básico de SQL.</p>
-<hr />
 <h3 id="objetivos-de-aprendizagem">Objetivos de Aprendizagem<a class="headerlink" href="#objetivos-de-aprendizagem" title="Permanent link">&para;</a></h3>
 <p>Ao final, serão capazes de:</p>
 <ol>
@@ -1507,9 +1503,7 @@
 <li>Manipular e consultar dados semiestruturados usando operadores nativos (<code>@&gt;</code>, <code>?</code>, <code>?|</code>).</li>
 <li>Criar e otimizar buscas em documentos JSON utilizando índices <code>GIN</code>.</li>
 </ol>
-<hr />
-<h3 id="cronograma-detalhado">Cronograma Detalhado<a class="headerlink" href="#cronograma-detalhado" title="Permanent link">&para;</a></h3>
-<h4 id="bloco-1-teoria">BLOCO 1: Teoria<a class="headerlink" href="#bloco-1-teoria" title="Permanent link">&para;</a></h4>
+<h3 id="teoria">Teoria<a class="headerlink" href="#teoria" title="Permanent link">&para;</a></h3>
 <p><strong>1.1. A Dor do Relacional em Dados Variáveis</strong></p>
 <ul>
 <li><strong>Cenário Problema:</strong> Como modelar uma tabela <code>delivery_items</code> para uma logística que transporta <em>de tudo</em>?<ul>
@@ -1532,8 +1526,7 @@
     *   <code>?</code> (Existe chave): A chave existe no nível raiz?
     *   <code>?|</code> (Existe alguma das chaves): OR lógico para chaves.
     *   <code>-&gt;</code> vs <code>-&gt;&gt;</code>: Navegação (retorna JSON vs retorna Texto).</p>
-<hr />
-<h4 id="bloco-2-pratica-setup-e-modelagem">BLOCO 2: Prática — Setup e Modelagem<a class="headerlink" href="#bloco-2-pratica-setup-e-modelagem" title="Permanent link">&para;</a></h4>
+<h4 id="pratica-setup-e-modelagem">Prática — Setup e Modelagem<a class="headerlink" href="#pratica-setup-e-modelagem" title="Permanent link">&para;</a></h4>
 <p>**2.1. Criação da Tabela Híbrida **
 *   Os alunos devem criar a tabela <code>delivery_manifests</code> que faz ponte entre o relacional (Semana 1) e o documento.
 <div class="language-sql highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- No psql ou DBeaver/pgAdmin</span>
@@ -1567,22 +1560,22 @@
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="s1">}&#39;</span><span class="p">);</span>
 </span></code></pre></div>
 * </em>Mini-desafio rápido:</em> escrever uma query que retorne apenas o <code>manifest_type</code> e o <code>name</code> do primeiro item do JSON.</p>
-<p><div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">manifest_type</span><span class="p">,</span><span class="w"> </span><span class="n">payload</span><span class="o">-&gt;</span><span class="s1">&#39;items&#39;</span><span class="o">-&gt;</span><span class="mi">0</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;name&#39;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">first_item</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">manifest_type</span><span class="p">,</span><span class="w"> </span><span class="n">payload</span><span class="o">-&gt;</span><span class="s1">&#39;items&#39;</span><span class="o">-&gt;</span><span class="mi">0</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;name&#39;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">first_item</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">delivery_manifests</span><span class="p">;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">#```</span><span class="w">   </span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">---</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="o">####</span><span class="w"> </span><span class="n">BLOCO</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="n">Prática</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="err">Í</span><span class="n">ndices</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">Performance</span><span class="w"> </span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="o">**</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="w"> </span><span class="n">O</span><span class="w"> </span><span class="n">Problema</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">Busca</span><span class="w"> </span><span class="n">Linear</span><span class="w"> </span><span class="o">**</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="o">*</span><span class="w">   </span><span class="o">**</span><span class="n">Objetivo</span><span class="p">:</span><span class="o">**</span><span class="w"> </span><span class="n">observar</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">custo</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">procurar</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">chave</span><span class="w"> </span><span class="n">dentro</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">documentos</span><span class="w"> </span><span class="n">sem</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="err">í</span><span class="n">ndice</span><span class="w"> </span><span class="n">apropriado</span><span class="p">.</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="o">*</span><span class="w">   </span><span class="n">Antes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">começar</span><span class="p">,</span><span class="w"> </span><span class="n">confirme</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">tabela</span><span class="w"> </span><span class="n">contém</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">dados</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">prática</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">verifique</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="n">já</span><span class="w"> </span><span class="n">existe</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="err">í</span><span class="n">ndice</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="o">`</span><span class="n">payload</span><span class="o">`</span><span class="p">:</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="o">```</span><span class="k">sql</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="err">\</span><span class="n">d</span><span class="w"> </span><span class="n">delivery_manifests</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="o">####</span><span class="w"> </span><span class="n">Prática</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="err">Í</span><span class="n">ndices</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">Performance</span><span class="w"> </span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">**</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="w"> </span><span class="n">O</span><span class="w"> </span><span class="n">Problema</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">Busca</span><span class="w"> </span><span class="n">Linear</span><span class="w"> </span><span class="o">**</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="o">*</span><span class="w">   </span><span class="o">**</span><span class="n">Objetivo</span><span class="p">:</span><span class="o">**</span><span class="w"> </span><span class="n">observar</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">custo</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">procurar</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">chave</span><span class="w"> </span><span class="n">dentro</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">documentos</span><span class="w"> </span><span class="n">sem</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="err">í</span><span class="n">ndice</span><span class="w"> </span><span class="n">apropriado</span><span class="p">.</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="o">*</span><span class="w">   </span><span class="n">Antes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">começar</span><span class="p">,</span><span class="w"> </span><span class="n">confirme</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">tabela</span><span class="w"> </span><span class="n">contém</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">dados</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">prática</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">verifique</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="n">já</span><span class="w"> </span><span class="n">existe</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="err">í</span><span class="n">ndice</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="o">`</span><span class="n">payload</span><span class="o">`</span><span class="p">:</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="o">```</span><span class="k">sql</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="err">\</span><span class="n">d</span><span class="w"> </span><span class="n">delivery_manifests</span>
 </span></code></pre></div>
-*   Apresente a consulta e peça que os alunos prevejam quais linhas serão retornadas. Em seguida, execute-a com <code>EXPLAIN (ANALYZE, BUFFERS)</code> para inspecionar o plano:
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- O operador @&gt; verifica se o documento contém o fragmento informado.</span>
+<ul>
+<li>Apresente a consulta e peça que os alunos prevejam quais linhas serão retornadas. Em seguida, execute-a com <code>EXPLAIN (ANALYZE, BUFFERS)</code> para inspecionar o plano:</li>
+</ul>
+<p><div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- O operador @&gt; verifica se o documento contém o fragmento informado.</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">EXPLAIN</span><span class="w"> </span><span class="p">(</span><span class="k">ANALYZE</span><span class="p">,</span><span class="w"> </span><span class="n">BUFFERS</span><span class="p">)</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">manifest_type</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">FROM</span><span class="w"> </span><span class="n">delivery_manifests</span>
@@ -1606,8 +1599,7 @@
 *   </strong>Validação e interpretação:<strong> quando o otimizador considerar vantajoso, o plano poderá mostrar <code>Bitmap Index Scan</code> usando <code>idx_manifest_payload_gin</code>, seguido de <code>Bitmap Heap Scan</code>, que busca as linhas correspondentes na tabela. Compare o plano e os buffers com a etapa anterior. A mudança não é garantida em tabelas pequenas ou quando o filtro retorna grande parte das linhas.
 *   </strong>Discussão sobre operadores:<strong> o índice GIN padrão para <code>JSONB</code> (<code>jsonb_ops</code>) atende operadores como <code>@&gt;</code> e <code>?</code>. Para cargas de trabalho focadas em contenção, existe também a classe <code>jsonb_path_ops</code>, que pode produzir um índice menor, mas não oferece o mesmo suporte a todos os operadores. Não é necessário criar ambos nesta atividade.
 *   </strong>Limite importante:** esse índice ajuda a localizar chaves e valores, mas não transforma uma comparação numérica como <code>weight_kg &gt; 5</code> em uma busca indexada. Para esse tipo de consulta, é necessário extrair o valor e usar uma estratégia adequada, como uma coluna relacional ou um índice de expressão compatível. Esse ponto prepara o desafio do próximo bloco.</p>
-<hr />
-<h4 id="bloco-4-o-desafio-e-consolidacao">BLOCO 4: O Desafio e Consolidação<a class="headerlink" href="#bloco-4-o-desafio-e-consolidacao" title="Permanent link">&para;</a></h4>
+<h4 id="o-desafio-e-consolidacao">O Desafio e Consolidação<a class="headerlink" href="#o-desafio-e-consolidacao" title="Permanent link">&para;</a></h4>
 <p><strong>4.1. O Desafio da Semana (40 min)</strong>
 *   <strong>Briefing do Desafio:</strong> "O setor de seguros precisa de um relatório urgente. Precisamos encontrar todos os manifestos que contenham itens classificados como <code>'fragile': true</code> E que tenham <code>'weight_kg' &gt; 5</code>. Como o GIN não indexa cast numérico nativamente, como vocês resolvem isso de forma performática ou funcional?"
 *   <em>Tempo para os alunos tentarem (individual ou em duplas).</em></p>

@@ -1042,17 +1042,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ---
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#aplicando-o-01_schemasql-no-docker-sem-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1061,10 +1050,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Aplicando o 01_schema.sql no Docker (sem docker-compose)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#opcao-1-pipe-direto-mais-rapida-recomendada" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1102,8 +1090,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#opcao-2-copiar-o-arquivo-para-o-container-mais-robusta" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1113,8 +1101,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1124,8 +1112,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#validando-que-funcionou" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1135,8 +1123,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#problemas-comuns-e-solucoes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1196,8 +1184,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#dica-bonus-script-de-reset-total" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1207,8 +1195,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#resumo-pratico" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1216,11 +1204,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1903,6 +1886,8 @@
   
 
 
+  <h1>11 - Schema - Constraints</h1>
+
 <h2 id="schema-ddl-completo-swifttrack-core">Schema DDL Completo — SwiftTrack Core<a class="headerlink" href="#schema-ddl-completo-swifttrack-core" title="Permanent link">&para;</a></h2>
 <p>Abaixo está o script SQL completo e comentado para a criação do schema <code>swifttrack_core</code>. Ele foi desenhado para ser <strong>didático</strong> (com explicações embutidas) e <strong>robusto</strong> (pronto para produção).</p>
 <h3 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">&para;</a></h3>
@@ -1979,7 +1964,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="script-sql-completo-01_schemasql">Script SQL Completo (<code>01_schema.sql</code>)<a class="headerlink" href="#script-sql-completo-01_schemasql" title="Permanent link">&para;</a></h2>
 <div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- =====================================================================</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">-- SWIFTTRACK CORE - Schema Relacional</span>
@@ -2202,7 +2186,6 @@
 </span><span id="__span-2-219"><a id="__codelineno-2-219" name="__codelineno-2-219" href="#__codelineno-2-219"></a><span class="w">    </span><span class="k">BEFORE</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">deliveries</span>
 </span><span id="__span-2-220"><a id="__codelineno-2-220" name="__codelineno-2-220" href="#__codelineno-2-220"></a><span class="w">    </span><span class="k">FOR</span><span class="w"> </span><span class="k">EACH</span><span class="w"> </span><span class="k">ROW</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="k">FUNCTION</span><span class="w"> </span><span class="n">update_updated_at_column</span><span class="p">();</span>
 </span></code></pre></div>
-<hr />
 <h2 id="queries-de-validacao-para-o-aluno-testar-as-constraints">Queries de Validação (Para o Aluno Testar as Constraints)<a class="headerlink" href="#queries-de-validacao-para-o-aluno-testar-as-constraints" title="Permanent link">&para;</a></h2>
 <p>Depois de rodar o script acima, o aluno pode testar se as constraints estão funcionando. <strong>Todas as queries abaixo DEVEM falhar</strong> com erro de constraint:</p>
 <div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Deve falhar: valor negativo na fatura</span>
@@ -2235,7 +2218,6 @@
 </span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;RJ&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">NOW</span><span class="p">());</span>
 </span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="c1">-- ERRO: violates check constraint &quot;chk_deliveries_delivered_at&quot;</span>
 </span></code></pre></div>
-<hr />
 <h2 id="verificando-os-indices-criados">Verificando os Índices Criados<a class="headerlink" href="#verificando-os-indices-criados" title="Permanent link">&para;</a></h2>
 <p>Para confirmar que os índices B-Tree foram criados, o aluno pode rodar:</p>
 <div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Lista todos os índices do schema swifttrack_core</span>
@@ -2253,7 +2235,6 @@
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IN_TRANSIT&#39;</span><span class="p">;</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">-- O plano pode usar o índice ou uma varredura sequencial, conforme o volume e a distribuição dos dados.</span>
 </span></code></pre></div>
-<hr />
 <h2 id="pontos-de-discussao-para-a-aula">Pontos de Discussão para a Aula<a class="headerlink" href="#pontos-de-discussao-para-a-aula" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
@@ -2273,10 +2254,8 @@
    No PostgreSQL, são sinônimos. Ambos garantem precisão exata — essenciais para dinheiro.</p>
 </li>
 </ol>
-<h2 id="-">---<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
-<h1 id="aplicando-o-01_schemasql-no-docker-sem-docker-compose">Aplicando o <code>01_schema.sql</code> no Docker (sem docker-compose)<a class="headerlink" href="#aplicando-o-01_schemasql-no-docker-sem-docker-compose" title="Permanent link">&para;</a></h1>
+<h2 id="aplicando-o-01_schemasql-no-docker-sem-docker-compose">Aplicando o <code>01_schema.sql</code> no Docker (sem docker-compose)<a class="headerlink" href="#aplicando-o-01_schemasql-no-docker-sem-docker-compose" title="Permanent link">&para;</a></h2>
 <p>Existem <strong>3 formas principais</strong> de fazer isso. Vou apresentar da mais simples para a mais robusta.</p>
-<hr />
 <h2 id="opcao-1-pipe-direto-mais-rapida-recomendada">Opção 1: Pipe direto (MAIS RÁPIDA — Recomendada)<a class="headerlink" href="#opcao-1-pipe-direto-mais-rapida-recomendada" title="Permanent link">&para;</a></h2>
 <p>Essa é a forma mais elegante: você "alimenta" o <code>psql</code> dentro do container com o conteúdo do seu arquivo local, sem precisar copiar nada.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Execute este comando no terminal, na pasta onde está o arquivo 01_schema.sql</span>
@@ -2319,7 +2298,6 @@
 </span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>CREATE FUNCTION
 </span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>CREATE TRIGGER
 </span></code></pre></div>
-<hr />
 <h2 id="opcao-2-copiar-o-arquivo-para-o-container-mais-robusta">Opção 2: Copiar o arquivo para o container (MAIS ROBUSTA)<a class="headerlink" href="#opcao-2-copiar-o-arquivo-para-o-container-mais-robusta" title="Permanent link">&para;</a></h2>
 <p>Se o arquivo for grande ou você quiser inspecioná-lo dentro do container depois:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 1. Copia o arquivo para dentro do container</span>
@@ -2332,7 +2310,6 @@
 </span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>swifttrack-pg<span class="w"> </span>rm<span class="w"> </span>/tmp/01_schema.sql
 </span></code></pre></div>
 <p><strong>Vantagem:</strong> Se der erro no meio, você pode entrar no container e editar o arquivo sem precisar reenviar.</p>
-<hr />
 <h2 id="opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina">Opção 3: Usar <code>psql</code> local (se tiver instalado na sua máquina)<a class="headerlink" href="#opcao-3-usar-psql-local-se-tiver-instalado-na-sua-maquina" title="Permanent link">&para;</a></h2>
 <p>Como a porta <code>5432</code> foi exposta no <code>docker run</code>, você pode conectar <strong>diretamente da sua máquina</strong>:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># No Linux/Mac:</span>
@@ -2344,7 +2321,6 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">PGPASSWORD</span><span class="o">=</span>secret<span class="w"> </span>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core<span class="w"> </span>-f<span class="w"> </span>01_schema.sql
 </span></code></pre></div></p>
 <p>** Limitação:** Requer ter o <code>psql</code> instalado na máquina host.</p>
-<hr />
 <h2 id="validando-que-funcionou">Validando que Funcionou<a class="headerlink" href="#validando-que-funcionou" title="Permanent link">&para;</a></h2>
 <p>Depois de executar qualquer uma das opções acima, confirme que o schema foi criado:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Entra no container interativamente</span>
@@ -2364,7 +2340,6 @@
 </span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1">-- Sai do psql</span>
 </span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="err">\</span><span class="n">q</span>
 </span></code></pre></div>
-<hr />
 <h2 id="problemas-comuns-e-solucoes">Problemas Comuns e Soluções<a class="headerlink" href="#problemas-comuns-e-solucoes" title="Permanent link">&para;</a></h2>
 <h3 id="erro-docker-exec-requires-at-least-2-arguments">Erro: <code>docker: "exec" requires at least 2 arguments</code><a class="headerlink" href="#erro-docker-exec-requires-at-least-2-arguments" title="Permanent link">&para;</a></h3>
 <p><strong>Causa:</strong> Esqueceu o <code>-i</code> no pipe.
@@ -2384,7 +2359,6 @@
 <h3 id="erro-permission-denied-no-arquivo">Erro: <code>permission denied</code> no arquivo<a class="headerlink" href="#erro-permission-denied-no-arquivo" title="Permanent link">&para;</a></h3>
 <p><strong>Causa:</strong> Permissões do Linux.
 <strong>Solução:</strong> <code>chmod +r 01_schema.sql</code></p>
-<hr />
 <h2 id="dica-bonus-script-de-reset-total">Dica Bônus: Script de "Reset Total"<a class="headerlink" href="#dica-bonus-script-de-reset-total" title="Permanent link">&para;</a></h2>
 <p>Se você quiser <strong>recriar o schema do zero</strong> (útil durante os testes da aula), crie um arquivo <code>reset.sh</code>:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
@@ -2398,7 +2372,6 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>reset.sh
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>./reset.sh
 </span></code></pre></div></p>
-<hr />
 <h2 id="resumo-pratico">Resumo Prático<a class="headerlink" href="#resumo-pratico" title="Permanent link">&para;</a></h2>
 <p>Para a aula, a <strong>Opção 1</strong> é a mais didática e rápida:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>cat<span class="w"> </span>01_schema.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-i<span class="w"> </span>swifttrack-pg<span class="w"> </span>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>swifttrack_core
